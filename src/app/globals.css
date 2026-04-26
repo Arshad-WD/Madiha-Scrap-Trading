@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #041329;        /* Deep Midnight Navy */
-  --color-primary-light: #112036;  /* Surface Container */
-  --color-primary-lighter: #1c2a41; /* Surface Container High */
-  --color-accent: #50c878;         /* Forge Green (Emerald) */
-  --color-accent-dark: #005025;    /* Dark Forge Green */
-  --color-accent-light: #6ee591;   /* Vibrant Green */
+  --color-primary: #18181b;        /* Deep Charcoal (Zinc 900) */
+  --color-primary-light: #27272a;  /* Surface Container (Zinc 800) */
+  --color-primary-lighter: #3f3f46; /* Surface Container High (Zinc 700) */
+  --color-accent: #f97316;         /* Electric Orange */
+  --color-accent-dark: #ea580c;    /* Dark Orange */
+  --color-accent-light: #fdba74;   /* Vibrant Light Orange */
   
-  --color-text-primary: #d6e3ff;   /* Soft Blue-White */
-  --color-text-secondary: #bdcabc; /* Muted Sage-Grey */
-  --color-text-muted: #3e4a3f;     /* Industrial Charcoal */
+  --color-text-primary: #fafafa;   /* Pure White */
+  --color-text-secondary: #a1a1aa; /* Industrial Grey */
+  --color-text-muted: #52525b;     /* Muted Grey */
   
   --font-sans: "Inter", "Manrope", system-ui, -apple-system, sans-serif;
 }
