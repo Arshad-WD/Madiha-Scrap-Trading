@@ -131,7 +131,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
       <head>
-        <meta name="theme-color" content="#3d2624" />
+        <meta name="theme-color" content="#041329" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
