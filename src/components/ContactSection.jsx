@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import InquiryForm from "./InquiryForm";
 
 export default function ContactSection() {
-  const phone = process.env.NEXT_PUBLIC_PHONE || "+919876543210";
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "919876543210";
+  const phone = process.env.NEXT_PUBLIC_PHONE || "+91 82913 12907";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "918291312907";
 
   return (
-    <section id="contact" className="section-wrapper bg-primary relative overflow-hidden">
+    <section id="contact" className="section-wrapper bg-white relative overflow-hidden">
       {/* Cinematic Background Decor */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px] -z-10 translate-x-1/3 -translate-y-1/3" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary-lighter/10 rounded-full blur-[100px] -z-10 -translate-x-1/4 translate-y-1/4" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-slate-50 rounded-full blur-[150px] -z-10 translate-x-1/3 -translate-y-1/3" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -z-10 -translate-x-1/4 translate-y-1/4" />
 
       <div className="section-container">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
@@ -26,7 +26,7 @@ export default function ContactSection() {
             >
               <div>
                 <div className="section-label mb-8">The Alchemist / Contact</div>
-                <h2 className="text-5xl md:text-7xl font-black text-text-primary mb-8 tracking-tighter leading-[0.9]">
+                <h2 className="text-5xl md:text-7xl font-black text-primary mb-8 tracking-tighter leading-[0.9]">
                   Transform <br/>
                   <span className="text-accent italic">Material</span> <br/>
                   Into Value.
@@ -39,7 +39,7 @@ export default function ContactSection() {
               <div className="space-y-4 md:space-y-6">
                 <a
                   href={`tel:${phone}`}
-                  className="group flex items-center gap-4 md:gap-6 p-5 sm:p-8 bg-primary-light rounded-[2rem] sm:rounded-[2.5rem] transition-all duration-500 hover:scale-[1.02] hover:bg-primary-lighter shadow-2xl"
+                  className="group flex items-center gap-4 md:gap-6 p-5 sm:p-8 bg-slate-50 border border-slate-100 rounded-[2rem] sm:rounded-[2.5rem] transition-all duration-500 hover:scale-[1.02] hover:bg-white hover:shadow-2xl"
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-500 shrink-0">
                     <svg className="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ export default function ContactSection() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-text-secondary text-[10px] sm:text-[11px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-1">Direct Line</p>
-                    <p className="text-text-primary text-lg sm:text-2xl font-black truncate">{phone}</p>
+                    <p className="text-primary text-lg sm:text-2xl font-black truncate">{phone}</p>
                   </div>
                 </a>
 
@@ -77,7 +77,7 @@ export default function ContactSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="bg-primary-lighter/30 backdrop-blur-3xl border border-white/5 p-6 sm:p-10 md:p-16 rounded-[2rem] sm:rounded-[3rem] shadow-2xl relative overflow-hidden"
+              className="bg-white border border-slate-100 p-6 sm:p-10 md:p-16 rounded-[2rem] sm:rounded-[3rem] shadow-2xl relative overflow-hidden"
             >
               {/* Internal Accent */}
               <div className="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-bl-[5rem]" />

@@ -15,22 +15,22 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://madihascraptrading.com"),
   title: {
-    default: "Madiha Scrap Trading — Best Scrap Dealer & Buyer Near You",
+    default: "Madiha Scrap Trading — Professional Industrial Scrap Solutions",
     template: "%s | Madiha Scrap Trading",
   },
   description:
-    "Madiha Scrap Trading offers the best prices for metal scrap, plastic scrap, e-waste, and industrial scrap. Free doorstep pickup and instant payment. Call now for a free quote!",
+    "Madiha Scrap Trading is Mumbai's premier industrial and commercial scrap management partner. Institutional precision in valuation, free logistics, and instant digital payments for all metal, e-waste, and corporate assets.",
   keywords: [
-    "scrap dealer near me",
-    "scrap buyer",
-    "metal scrap trading",
-    "sell scrap online",
+    "industrial scrap buyer mumbai",
+    "commercial scrap management",
+    "best scrap rates mumbai",
+    "corporate asset disposal",
+    "factory scrap buyer",
+    "e-waste recycling mumbai",
+    "metal scrap trading india",
+    "office scrap clearance",
     "scrap pickup service",
-    "e-waste recycling",
-    "industrial scrap buyer",
-    "best scrap price",
-    "plastic scrap buyer",
-    "scrap dealer",
+    "madiha scrap trading",
   ],
   authors: [{ name: "Madiha Scrap Trading" }],
   creator: "Madiha Scrap Trading",
@@ -39,23 +39,23 @@ export const metadata = {
     locale: "en_IN",
     url: "/",
     siteName: "Madiha Scrap Trading",
-    title: "Madiha Scrap Trading — Best Scrap Dealer & Buyer Near You",
+    title: "Madiha Scrap Trading — Institutional Scrap Trading Experts",
     description:
-      "Get the best price for your scrap. We buy metal, plastic, e-waste & industrial scrap with free pickup and instant payment.",
+      "Transform your industrial and commercial scrap into liquidity with Mumbai's most trusted trading partner. Precision weighing and instant payments.",
     images: [
       {
         url: "/images/hero-1.png",
         width: 1200,
         height: 630,
-        alt: "Madiha Scrap Trading",
+        alt: "Madiha Scrap Trading Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Madiha Scrap Trading — Best Scrap Dealer & Buyer",
+    title: "Madiha Scrap Trading — Professional Industrial Scrap Buyer",
     description:
-      "Sell your scrap at the best price. Free pickup, instant payment. Call now!",
+      "Institutional precision in scrap management. Best market rates, free pickup, and instant payments.",
     images: ["/images/hero-1.png"],
   },
   robots: {
@@ -70,7 +70,8 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
@@ -131,9 +132,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
       <head>
-        <meta name="theme-color" content="#18181b" />
+        <meta name="theme-color" content="#0f172a" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

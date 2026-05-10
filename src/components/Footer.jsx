@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Logo from "./Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary pt-24 pb-32 md:pb-12 relative overflow-hidden">
       {/* Huge Background Typography */}
-      <div className="absolute -bottom-10 left-0 right-0 text-[18vw] font-black text-white/[0.02] select-none pointer-events-none uppercase tracking-tighter leading-none whitespace-nowrap">
+      <div className="absolute -bottom-10 left-0 right-0 text-[18vw] font-black text-white/[0.03] select-none pointer-events-none uppercase tracking-tighter leading-none whitespace-nowrap">
         Madiha Scrap Trading
       </div>
 
@@ -19,14 +20,9 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="lg:col-span-5">
             <Link href="/" className="flex items-center gap-3 mb-8 group">
-              <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center font-black text-primary text-xl transition-transform">
-                M
-              </div>
-              <span className="text-white font-black text-2xl tracking-tighter">
-                MADIHA<span className="text-accent">.</span>
-              </span>
+              <Logo className="w-10 h-10" light />
             </Link>
-            <p className="body-text text-lg max-w-sm mb-10">
+            <p className="body-text text-lg max-w-sm mb-10 text-slate-400">
               Transforming the scrap trading industry with professional service, 
               market-leading prices, and instant doorstep collections across the city.
             </p>
@@ -41,7 +37,8 @@ export default function Footer() {
                 <a 
                   key={social.name}
                   href="#" 
-                  className="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-text-secondary hover:text-accent hover:border-accent/30 transition-all duration-300"
+                  className="w-12 h-12 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-accent hover:border-accent/30 transition-all duration-300"
+                  aria-label={`Follow us on ${social.name}`}
                 >
                   <span className="sr-only">{social.name}</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -61,7 +58,7 @@ export default function Footer() {
                 <ul className="space-y-4">
                   {["Home", "About", "Services", "Process", "Contact"].map((item) => (
                     <li key={item}>
-                      <Link href={`#${item.toLowerCase()}`} className="text-text-secondary hover:text-accent transition-colors text-sm font-bold">
+                      <Link href={`#${item.toLowerCase()}`} className="text-slate-400 hover:text-accent transition-colors text-sm font-bold">
                         {item}
                       </Link>
                     </li>
@@ -75,7 +72,10 @@ export default function Footer() {
                   <li>
                     <p className="text-white/20 text-[9px] uppercase font-black tracking-widest mb-1">Call Us</p>
                     <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`} className="text-white hover:text-accent font-black text-lg transition-colors block">
-                      +91 98765 43210
+                      {process.env.NEXT_PUBLIC_PHONE}
+                    </a>
+                    <a href={`tel:${process.env.NEXT_PUBLIC_PHONE_ALT}`} className="text-white/60 hover:text-accent font-bold text-sm transition-colors block mt-1">
+                      {process.env.NEXT_PUBLIC_PHONE_ALT}
                     </a>
                   </li>
                   <li>
@@ -89,7 +89,7 @@ export default function Footer() {
 
               <div className="col-span-2 sm:col-span-1">
                 <h4 className="text-accent text-[10px] font-black uppercase tracking-[0.3em] mb-8">Location</h4>
-                <p className="text-text-secondary text-sm font-bold leading-relaxed mb-6">
+                <p className="text-slate-400 text-sm font-bold leading-relaxed mb-6">
                   Serving Mumbai, Navi Mumbai, and surrounding areas.
                 </p>
                 <div className="pt-6 border-t border-white/5">

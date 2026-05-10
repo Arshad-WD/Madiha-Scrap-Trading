@@ -44,7 +44,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="section-wrapper bg-primary relative overflow-hidden border-y border-white/5">
+    <section id="why-us" className="section-wrapper bg-white relative overflow-hidden border-y border-slate-100">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           
@@ -56,11 +56,11 @@ export default function WhyChooseUs() {
             className="lg:sticky lg:top-32"
           >
             <div className="section-label mb-6">Why Choose Us</div>
-            <h2 className="heading-lg text-white mb-8">
+            <h2 className="heading-lg text-primary mb-8">
               The Most Professional <br />
               <span className="text-accent">Scrap Trading</span> Experience
             </h2>
-            <p className="body-text mb-10">
+            <p className="body-text mb-10 text-text-secondary">
               We&apos;ve redesigned the scrap selling process to be fast, transparent, and rewarding. 
               Our customers value our punctuality and fair dealing.
             </p>
@@ -78,12 +78,12 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group p-8 rounded-[2rem] bg-primary-light/50 border border-white/5 transition-all duration-500 hover:border-accent/30 hover:bg-primary-light"
+                className="group p-8 rounded-[2rem] bg-slate-50 border border-slate-100 transition-all duration-500 hover:border-accent/30 hover:bg-white hover:shadow-2xl"
               >
-                <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-primary transition-all duration-500 shadow-inner">
+                <div className="w-14 h-14 rounded-2xl bg-white border border-slate-100 flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-500 shadow-sm">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-black text-white mb-4 leading-tight">
+                <h3 className="text-xl font-black text-primary mb-4 leading-tight">
                   {item.title}
                 </h3>
                 <p className="text-text-secondary text-sm leading-relaxed">

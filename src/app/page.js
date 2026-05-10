@@ -1,5 +1,6 @@
 import HeroCarousel from "@/components/HeroCarousel";
 import AboutSection from "@/components/AboutSection";
+import InfoTabs from "@/components/InfoTabs";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ProcessSection from "@/components/ProcessSection";
@@ -10,23 +11,12 @@ export default function Home() {
   return (
     <>
       <HeroCarousel />
-
-      <div className="section-divider" />
       <AboutSection />
-
-      <div className="section-divider" />
+      <InfoTabs />
       <ServicesSection />
-
-      <div className="section-divider" />
       <WhyChooseUs />
-
-      <div className="section-divider" />
       <ProcessSection />
-
-      <div className="section-divider" />
       <TestimonialsSection />
-
-      <div className="section-divider" />
       <ContactSection />
     </>
   );

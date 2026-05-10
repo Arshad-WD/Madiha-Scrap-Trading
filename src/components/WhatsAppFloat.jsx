@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function WhatsAppFloat() {
-  const whatsappUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || "919876543210"}?text=Hi%20I%20want%20scrap%20service`;
+  const whatsappUrl = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || "918291312907"}?text=Hi%20I%20want%20scrap%20service`;
 
   return (
     <motion.a

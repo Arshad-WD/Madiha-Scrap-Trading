@@ -11,8 +11,9 @@ const categories = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
       </svg>
     ),
-    color: "bg-accent/10",
+    color: "bg-accent/5",
     size: "large",
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=600&auto=format&fit=crop"
   },
   {
     title: "Electronic Waste",
@@ -24,6 +25,7 @@ const categories = [
     ),
     color: "bg-white/[0.03]",
     size: "medium",
+    image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=600&auto=format&fit=crop"
   },
   {
     title: "Plastic Scrap",
@@ -35,6 +37,7 @@ const categories = [
     ),
     color: "bg-white/[0.03]",
     size: "medium",
+    image: "https://images.unsplash.com/photo-1605600611284-195613e16124?q=80&w=600&auto=format&fit=crop"
   },
   {
     title: "Batteries",
@@ -44,8 +47,9 @@ const categories = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    color: "bg-white/[0.03]",
+    color: "bg-slate-50",
     size: "small",
+    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=600&auto=format&fit=crop"
   },
   {
     title: "Industrial Scrap",
@@ -55,14 +59,15 @@ const categories = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
-    color: "bg-white/[0.03]",
+    color: "bg-slate-50",
     size: "medium",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=600&auto=format&fit=crop"
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="section-wrapper bg-primary relative overflow-hidden">
+    <section id="services" className="section-wrapper bg-white relative overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-20 lg:mb-32">
           <motion.div
@@ -71,7 +76,7 @@ export default function ServicesSection() {
             viewport={{ once: true }}
           >
             <div className="section-label mx-auto mb-6">What We Buy</div>
-            <h2 className="heading-lg md:heading-xl text-white mb-8">
+            <h2 className="heading-lg md:heading-xl text-primary mb-8">
               We Buy All Kinds of <br />
               <span className="text-gradient italic">Scrap Materials</span>
             </h2>
@@ -88,19 +93,34 @@ export default function ServicesSection() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <div className="h-full p-8 md:p-10 rounded-[2rem] bg-primary-light/40 border border-white/5 transition-all duration-500 hover:border-accent/30 hover:bg-primary-light group">
-                <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-primary transition-all duration-500 shadow-inner">
-                  {cat.icon}
+              <div className="h-full overflow-hidden rounded-[2rem] bg-slate-50 border border-slate-100 transition-all duration-500 hover:border-accent/30 hover:bg-white hover:shadow-2xl group">
+                <div className="relative h-48 overflow-hidden">
+                   <img 
+                    src={cat.image} 
+                    alt={cat.title} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[0.5] group-hover:grayscale-0" 
+                    width="400"
+                    height="300"
+                    loading="lazy"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-transparent" />
+                   <div className="absolute bottom-6 left-8">
+                      <div className="w-12 h-12 rounded-xl bg-white border border-slate-100 flex items-center justify-center text-accent shadow-sm">
+                        {cat.icon}
+                      </div>
+                   </div>
                 </div>
-                <h3 className="text-2xl font-black text-white mb-6 tracking-tight">{cat.title}</h3>
-                <ul className="space-y-4">
-                  {cat.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-3 text-text-secondary text-sm font-bold group-hover:text-text-primary transition-colors">
-                      <div className="w-1.5 h-1.5 rounded-full bg-accent/50" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <div className="p-8 md:p-10 pt-4">
+                  <h3 className="text-2xl font-black text-primary mb-6 tracking-tight">{cat.title}</h3>
+                  <ul className="space-y-4">
+                    {cat.items.map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-3 text-text-secondary text-sm font-bold group-hover:text-primary transition-colors">
+                        <div className="w-1.5 h-1.5 rounded-full bg-accent/50" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </motion.div>
           ))}

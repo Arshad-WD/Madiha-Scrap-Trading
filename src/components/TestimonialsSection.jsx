@@ -37,7 +37,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="testimonials" className="section-wrapper bg-primary relative overflow-hidden">
+    <section id="testimonials" className="section-wrapper bg-white relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px] -z-10" />
 
@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
             viewport={{ once: true }}
           >
             <div className="section-label mx-auto mb-6">Testimonials</div>
-            <h2 className="section-title">
+            <h2 className="heading-lg md:heading-xl text-primary mb-8">
               What Our <span className="text-accent italic">Customers</span> Say
             </h2>
           </motion.div>
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
               transition={{ delay: i * 0.1 }}
               className="break-inside-avoid"
             >
-              <div className="glass-card p-6 md:p-10 border-white/10 hover:border-accent/30 transition-all duration-500 group">
+              <div className="bg-slate-50 border border-slate-100 p-6 md:p-10 rounded-[2rem] hover:bg-white hover:shadow-2xl hover:border-accent/30 transition-all duration-500 group">
                 {/* Quote Icon */}
                 <div className="text-accent/20 group-hover:text-accent/40 transition-colors mb-6">
                   <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
@@ -74,17 +74,21 @@ export default function TestimonialsSection() {
                   </svg>
                 </div>
                 
-                <p className={`text-white/80 leading-relaxed mb-8 italic ${item.size === 'large' ? 'text-xl' : 'text-base'}`}>
+                <p className={`text-text-secondary leading-relaxed mb-8 italic ${item.size === 'large' ? 'text-xl' : 'text-base'}`}>
                   &quot;{item.text}&quot;
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/20 border border-white/10 flex items-center justify-center text-accent font-black">
-                    {item.name.charAt(0)}
+                  <div className="w-12 h-12 rounded-full overflow-hidden border border-slate-200 shadow-sm shrink-0">
+                    <img 
+                      src={`https://i.pravatar.cc/100?u=${item.name}`} 
+                      alt={item.name} 
+                      className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-500" 
+                    />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold text-sm tracking-wide">{item.name}</h4>
-                    <p className="text-text-muted text-[10px] uppercase tracking-widest">{item.role}</p>
+                    <h4 className="text-primary font-bold text-sm tracking-wide">{item.name}</h4>
+                    <p className="text-text-secondary text-[10px] uppercase tracking-widest">{item.role}</p>
                   </div>
                 </div>
               </div>

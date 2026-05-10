@@ -37,7 +37,7 @@ function AnimatedCounter({ value, duration = 2 }) {
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-wrapper bg-primary relative overflow-hidden">
+    <section id="about" className="section-wrapper bg-white relative overflow-hidden">
       {/* Abstract Background Element */}
       <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10" />
       
@@ -53,7 +53,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="bg-white/[0.03] border border-white/5 p-6 md:p-8 rounded-3xl flex flex-col justify-center min-h-[160px] md:aspect-square"
+                className="bg-slate-50 border border-slate-100 p-6 md:p-8 rounded-3xl flex flex-col justify-center min-h-[160px] md:aspect-square"
               >
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
                   <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,10 +61,10 @@ export default function AboutSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-3xl md:text-5xl font-black text-white mb-1">
+                  <h3 className="text-3xl md:text-5xl font-black text-primary mb-1">
                     <AnimatedCounter value="10+" />
                   </h3>
-                  <p className="text-text-muted text-[10px] uppercase tracking-widest font-bold">Years of Trust</p>
+                  <p className="text-text-secondary text-[10px] uppercase tracking-widest font-bold">Years of Trust</p>
                 </div>
               </motion.div>
 
@@ -74,19 +74,19 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="bg-accent p-6 md:p-8 rounded-3xl flex flex-col justify-center min-h-[160px] md:aspect-square shadow-xl"
+                className="bg-accent p-6 md:p-8 rounded-3xl flex flex-col justify-center min-h-[160px] md:aspect-square shadow-xl shadow-accent/20"
               >
-                <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
-                  <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-4">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-4m3 4v-6m3 6V9" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-3xl md:text-5xl font-black text-primary mb-1">
+                  <h3 className="text-3xl md:text-5xl font-black text-white mb-1">
                     <AnimatedCounter value="10,000+" />
                   </h3>
-                  <p className="text-primary/70 text-[10px] uppercase tracking-widest font-black">Tons Recycled</p>
+                  <p className="text-white/80 text-[10px] uppercase tracking-widest font-black">Tons Recycled</p>
                 </div>
               </motion.div>
 
@@ -96,24 +96,24 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="md:col-span-2 bg-white/[0.03] border border-white/5 p-6 md:p-8 rounded-3xl flex items-center gap-6"
+                className="md:col-span-2 bg-slate-50 border border-slate-100 p-6 md:p-8 rounded-3xl flex items-center gap-6"
               >
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary-light/10 border border-white/5 flex items-center justify-center shrink-0">
-                  <svg className="w-6 h-6 md:w-8 md:h-8 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/5 border border-slate-200 flex items-center justify-center shrink-0">
+                  <svg className="w-6 h-6 md:w-8 md:h-8 text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-3xl md:text-5xl font-black text-white mb-1">
+                  <h3 className="text-3xl md:text-5xl font-black text-primary mb-1">
                     <AnimatedCounter value="5,000+" />
                   </h3>
-                  <p className="text-text-muted text-[10px] uppercase tracking-widest font-bold">Satisfied Sellers</p>
+                  <p className="text-text-secondary text-[10px] uppercase tracking-widest font-bold">Satisfied Sellers</p>
                 </div>
               </motion.div>
             </div>
           </div>
 
-          {/* Right: Text Content */}
+          {/* Right: Text & Visual Content */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -122,15 +122,29 @@ export default function AboutSection() {
             className="order-1 lg:order-2"
           >
             <div className="section-label mb-6">About Us</div>
-            <h2 className="heading-lg md:heading-xl text-white mb-8">
+            <h2 className="heading-lg md:heading-xl text-primary mb-8">
               A Trusted Name in <br />
               <span className="text-gradient italic">Scrap Recycling</span>
             </h2>
+            
+            {/* New Industrial Image Card */}
+            <div className="relative mb-12 rounded-[2.5rem] overflow-hidden aspect-video border border-slate-100 shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070&auto=format&fit=crop" 
+                alt="Industrial Recycling Facility" 
+                className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-1000"
+                width="800"
+                height="450"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+            </div>
+
             <div className="space-y-6">
-              <p className="body-text text-lg font-bold text-white">
+              <p className="body-text text-lg font-bold text-primary">
                 Madiha Scrap Trading has been serving households, businesses, and industries for over a decade.
               </p>
-              <p className="body-text">
+              <p className="body-text text-text-secondary">
                 We believe in fair pricing, transparent weighing, and building long-term relationships with our customers. 
                 Whether it&apos;s a few kilos of old newspapers or tons of industrial metal — we handle it all with care.
               </p>
@@ -139,11 +153,11 @@ export default function AboutSection() {
             <div className="mt-8 flex flex-wrap gap-6">
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-                <span className="text-white font-bold text-[10px] tracking-wider uppercase">Certified Dealer</span>
+                <span className="text-primary font-bold text-[10px] tracking-wider uppercase">Certified Dealer</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-accent" />
-                <span className="text-white font-bold text-[10px] tracking-wider uppercase">Transparent Pricing</span>
+                <span className="text-primary font-bold text-[10px] tracking-wider uppercase">Transparent Pricing</span>
               </div>
             </div>
           </motion.div>
