@@ -32,13 +32,15 @@ export default function Logo({ className = "w-10 h-10", iconOnly = false, light 
       </div>
 
       {!iconOnly && (
-        <div className="flex flex-col whitespace-nowrap">
-          <span className={`font-black text-xl md:text-2xl tracking-tighter leading-none transition-colors ${light ? 'text-white' : 'text-primary'} group-hover:text-accent`}>
-            MADIHA<span className="text-accent">.</span>
-          </span>
-          <span className={`text-[8px] md:text-[9px] font-black uppercase tracking-[0.4em] mt-0.5 ${light ? 'text-white/50' : 'text-text-secondary'}`}>
-            Scrap Trading
-          </span>
+        <div className="flex flex-col whitespace-nowrap leading-[0.8]">
+          <div className="flex flex-col">
+            <span className={`font-black text-xl md:text-2xl tracking-tighter transition-colors ${light ? 'text-white' : 'text-primary'} group-hover:text-accent`}>
+              MADIHA
+            </span>
+            <span className={`text-[10px] md:text-[11px] font-black uppercase tracking-[0.25em] mt-1 ${light ? 'text-accent' : 'text-accent'}`}>
+              Scrap Trading
+            </span>
+          </div>
         </div>
       )}
     </div>
