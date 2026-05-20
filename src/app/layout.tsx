@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Barlow, Barlow_Condensed, Bebas_Neue } from "next/font/google";
 import "./globals.css";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleAnalytics from '@/components/layout/GoogleAnalytics';
+import JsonLd from "@/components/layout/JsonLd";
+import GTMHead from "@/components/layout/GTMHead";
+import GTMBody from "@/components/layout/GTMBody";
 
 
 const barlow = Barlow({
@@ -54,70 +57,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Madiha Scrap Trading",
-    "image": "https://madihascraptrading.com/logo.png",
-    "@id": "https://madihascraptrading.com",
-    "url": "https://madihascraptrading.com",
-    "telephone": "+918291312506",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "SANAULLAH COMPOUND, next to Yogiraj school, Mayfair Industrial Area, Sathi D Souza Nagar",
-      "addressLocality": "Saki Naka",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400072",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 19.0956,
-      "longitude": 72.8839
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-        ],
-        "opens": "09:00",
-        "closes": "19:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/madihascraptrading",
-      "https://www.instagram.com/madihascraptrading"
-    ]
-  };
-
   return (
     <html lang="en">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NCJBT948');`,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <GTMHead />
+        <JsonLd />
       </head>
       <body className={`${barlow.variable} ${barlowCondensed.variable} ${bebasNeue.variable}`}>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NCJBT948"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+        <GTMBody />
         <GoogleAnalytics />
         {children}
       </body>

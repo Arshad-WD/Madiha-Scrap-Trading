@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import StatsBar from "@/components/StatsBar";
-import ServicesSection from "@/components/ServicesSection";
-import MaterialsSection from "@/components/MaterialsSection";
-import WorkCarousel from "@/components/WorkCarousel";
-import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import FloatingButtons from "@/components/FloatingButtons";
+import Navbar from '@/components/layout/Navbar';
+import HeroSection from '@/components/sections/HeroSection';
+import StatsBar from '@/components/sections/StatsBar';
+import ServicesSection from '@/components/sections/ServicesSection';
+import MaterialsSection from '@/components/sections/MaterialsSection';
+import WorkCarousel from '@/components/sections/WorkCarousel';
+import AboutSection from '@/components/sections/AboutSection';
+import ContactSection from '@/components/sections/ContactSection';
+import Footer from '@/components/layout/Footer';
+import FloatingButtons from '@/components/layout/FloatingButtons';
 
 export default function Home() {
   return (
