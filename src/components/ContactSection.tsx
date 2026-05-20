@@ -28,7 +28,7 @@ export default function ContactSection() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-gray-900">Phone</h4>
-                  <p className="text-gray-600 break-words">+91 82913 12907</p>
+                  <p className="text-gray-600 break-words">+91 82913 12506</p>
                   <p className="text-gray-600 break-words">+91 96195 90481</p>
                 </div>
               </div>
@@ -49,17 +49,19 @@ export default function ContactSection() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-gray-900">Location</h4>
-                  <p className="text-gray-600 break-words">Mumbai, Maharashtra, India</p>
+                  <p className="text-gray-600 break-words">
+                    Sanaullah Compound, next to Yogiraj school, Mayfair Industrial Area, Sathi D Souza Nagar, Saki Naka, Mumbai, Maharashtra - 400072
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full">
-              <a href="tel:+918291312907" className="flex-1 w-full bg-amber-600 text-white flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-amber-700 transition-colors shadow text-center whitespace-nowrap">
+              <a href="tel:+918291312506" className="flex-1 w-full bg-amber-600 text-white flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-amber-700 transition-colors shadow text-center whitespace-nowrap">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 Call Now
               </a>
-              <a href="https://wa.me/918291312907?text=Hello%21%20I%27d%20like%20to%20get%20a%20scrap%20price%20quote." target="_blank" rel="noopener noreferrer" className="flex-1 w-full border-2 border-green-500 text-green-600 flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-green-50 transition-colors text-center whitespace-nowrap">
+              <a href="https://wa.me/918291312506?text=Hello%21%20I%27d%20like%20to%20get%20a%20scrap%20price%20quote." target="_blank" rel="noopener noreferrer" className="flex-1 w-full border-2 border-green-500 text-green-600 flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-green-50 transition-colors text-center whitespace-nowrap">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                 WhatsApp
               </a>
@@ -77,7 +79,7 @@ export default function ContactSection() {
           <div className="h-[400px] lg:h-auto bg-gray-100">
             <iframe
               title="Madiha Scrap Trading Google Maps Location"
-              src="https://maps.google.com/maps?q=Mumbai&t=&z=11&ie=UTF8&iwloc=&output=embed"
+              src={process.env.NEXT_PUBLIC_MAPS_EMBED_URL || "https://maps.google.com/maps?q=SANAULLAH%20COMPOUND%2C%20next%20to%20Yogiraj%20school%2C%20Mayfair%20Industrial%20Area%2C%20Sathi%20D%20Souza%20Nagar%2C%20Saki%20Naka%2C%20Mumbai%2C%20Maharashtra%20400072&t=&z=15&ie=UTF8&iwloc=&output=embed"}
               width="100%"
               height="100%"
               style={{ border: 0 }}

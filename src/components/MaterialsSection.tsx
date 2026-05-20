@@ -51,7 +51,7 @@ export default function MaterialsSection() {
             <p className="text-amber-800">We probably still buy it. Contact us for a quick quote.</p>
           </div>
           <a 
-            href="https://wa.me/918291312907?text=Hello!%20I%20have%20some%20materials%20and%20would%20like%20to%20get%20a%20quick%20price%20quote." 
+            href="https://wa.me/918291312506?text=Hello!%20I%20have%20some%20materials%20and%20would%20like%20to%20get%20a%20quick%20price%20quote." 
             target="_blank" 
             rel="noopener noreferrer" 
             className="shrink-0 px-8 py-3.5 bg-[#25D366] text-white font-bold rounded-lg shadow-md hover:bg-[#20bd5a] transition-all hover:-translate-y-1 flex items-center gap-2"

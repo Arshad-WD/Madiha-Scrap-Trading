@@ -127,7 +127,7 @@ export default function FloatingButtons() {
 
         {/* WhatsApp Orb */}
         <a 
-          href="https://wa.me/918291312907?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." 
+          href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." 
           target="_blank" 
           rel="noopener noreferrer"
           className="action-orb orb-whatsapp"
@@ -144,7 +144,7 @@ export default function FloatingButtons() {
 
         {/* Call Orb */}
         <a 
-          href="tel:+918291312907" 
+          href="tel:+918291312506" 
           className="action-orb orb-call"
           aria-label="Call Us"
         >

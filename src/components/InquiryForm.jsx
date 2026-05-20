@@ -64,7 +64,7 @@ export default function InquiryForm() {
               id="phone-number"
               type="tel"
               required
-              placeholder="e.g. +91 82913 12907"
+              placeholder="e.g. +91 82913 12506"
               className="w-full bg-slate-50 border border-slate-100 p-4 sm:p-6 rounded-2xl text-primary text-base sm:text-lg outline-none focus:ring-2 focus:ring-accent/20 transition-all placeholder:text-slate-300"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}

@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const navLinks = [
   { name: "Home", href: "/" },
+  { name: "Our Work", href: "#work" },
   { name: "Services", href: "#services" },
   { name: "Materials", href: "#materials" },
-  { name: "Our Work", href: "#work" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
 ];
@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <a
-            href="tel:+918291312907"
+            href="tel:+918291312506"
             className="flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-transform hover:scale-105 shadow-md rounded-md"
             style={{ background: "var(--accent)", color: "#000" }}
           >
@@ -108,7 +108,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="tel:+918291312907"
+            href="tel:+918291312506"
             className="mt-4 flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-wider rounded-md"
             style={{ background: "var(--accent)", color: "#000" }}
           >

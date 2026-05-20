@@ -62,7 +62,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="text-3xl md:text-5xl font-black text-primary mb-1">
-                    <AnimatedCounter value="10+" />
+                    <AnimatedCounter value="2+" />
                   </h3>
                   <p className="text-text-secondary text-[10px] uppercase tracking-widest font-bold">Years of Trust</p>
                 </div>
@@ -84,7 +84,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="text-3xl md:text-5xl font-black text-white mb-1">
-                    <AnimatedCounter value="10,000+" />
+                    <AnimatedCounter value="100+" />
                   </h3>
                   <p className="text-white/80 text-[10px] uppercase tracking-widest font-black">Tons Recycled</p>
                 </div>
@@ -105,7 +105,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="text-3xl md:text-5xl font-black text-primary mb-1">
-                    <AnimatedCounter value="5,000+" />
+                    <AnimatedCounter value="150+" />
                   </h3>
                   <p className="text-text-secondary text-[10px] uppercase tracking-widest font-bold">Satisfied Sellers</p>
                 </div>
@@ -142,7 +142,7 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <p className="body-text text-lg font-bold text-primary">
-                Madiha Scrap Trading has been serving households, businesses, and industries for over a decade.
+                Madiha Scrap Trading has been serving households, businesses, and industries for over 2 years.
               </p>
               <p className="body-text text-text-secondary">
                 We believe in fair pricing, transparent weighing, and building long-term relationships with our customers. 

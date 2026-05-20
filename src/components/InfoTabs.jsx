@@ -8,7 +8,7 @@ const tabs = [
     id: "who",
     label: "Who We Are",
     title: "India's Leading Scrap Management Experts",
-    content: "Madiha Scrap Trading is a premier recycling and scrap management company dedicated to providing sustainable solutions for industrial and commercial waste. With over a decade of experience, we have built a reputation for transparency, reliability, and top-tier market rates.",
+    content: "Madiha Scrap Trading is a premier recycling and scrap management company dedicated to providing sustainable solutions for industrial and commercial waste. With years of experience, we have built a reputation for transparency, reliability, and top-tier market rates.",
     points: ["Certified Recycling Process", "Eco-Friendly Waste Disposal", "Large-Scale Industrial Capacity", "Pan-India Logistics Support"],
     image: "https://images.unsplash.com/photo-1591193686104-fddbaaf28b7e?q=80&w=800&auto=format&fit=crop"
   },
@@ -118,7 +118,7 @@ export default function InfoTabs() {
               transition={{ delay: 0.5 }}
               className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-2xl border border-slate-50"
             >
-               <div className="text-4xl font-black text-primary mb-1">10k+</div>
+               <div className="text-4xl font-black text-primary mb-1">100+</div>
                <div className="text-accent text-[10px] font-black uppercase tracking-widest">Tons Recycled</div>
             </motion.div>
           </div>

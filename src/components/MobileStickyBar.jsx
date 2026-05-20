@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 export default function MobileStickyBar() {
-  const phone = process.env.NEXT_PUBLIC_PHONE || "+91 82913 12907";
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "918291312907";
+  const phone = process.env.NEXT_PUBLIC_PHONE || "+91 82913 12506";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "918291312506";
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[100] md:hidden p-4">

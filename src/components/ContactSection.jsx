@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import InquiryForm from "./InquiryForm";
 
 export default function ContactSection() {
-  const phone = process.env.NEXT_PUBLIC_PHONE || "+91 82913 12907";
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "918291312907";
+  const phone = process.env.NEXT_PUBLIC_PHONE || "+91 82913 12506";
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "918291312506";
 
   return (
     <section id="contact" className="section-wrapper bg-white relative overflow-hidden">

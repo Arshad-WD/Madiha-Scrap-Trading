@@ -12,16 +12,16 @@ const workItems = [
     title: "Industrial Iron Scrap", 
     weight: "12 Tons", 
     location: "Bhiwandi, Maharashtra", 
-    type: "video", 
-    src: "/videos/industrial-iron-scrap.mp4"
+    type: "image", 
+    src: "/images/service-metal.png"
   },
   { 
     id: 2, 
     title: "Copper Wire & Cable Lot", 
     weight: "850 KG", 
     location: "Andheri, Mumbai", 
-    type: "video", 
-    src: "/videos/copper-wire-scrap.mp4"
+    type: "image", 
+    src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop"
   },
   { 
     id: 3, 

@@ -56,18 +56,18 @@ export default function HeroSection() {
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              10+ Years Experience
+              2+ Years Experience
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 pb-16">
-            <a href="tel:+918291312907" className="flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md shadow-lg transition-transform hover:-translate-y-1" style={{ background: "var(--accent)", color: "#000" }}>
+            <a href="tel:+918291312506" className="flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md shadow-lg transition-transform hover:-translate-y-1" style={{ background: "var(--accent)", color: "#000" }}>
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Call for Best Price
             </a>
-            <a href="https://wa.me/918291312907?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md transition-all hover:bg-green-50" style={{ border: "2px solid #16a34a", color: "#16a34a" }}>
+            <a href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md transition-all hover:bg-green-50" style={{ border: "2px solid #16a34a", color: "#16a34a" }}>
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>

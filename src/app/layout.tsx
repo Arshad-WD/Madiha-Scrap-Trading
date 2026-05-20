@@ -58,20 +58,20 @@ export default function RootLayout({
     "image": "https://madihascraptrading.com/logo.png",
     "@id": "https://madihascraptrading.com",
     "url": "https://madihascraptrading.com",
-    "telephone": "+918291312907",
+    "telephone": "+918291312506",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mumbai Industrial Area",
-      "addressLocality": "Mumbai",
+      "streetAddress": "SANAULLAH COMPOUND, next to Yogiraj school, Mayfair Industrial Area, Sathi D Souza Nagar",
+      "addressLocality": "Saki Naka",
       "addressRegion": "Maharashtra",
-      "postalCode": "400001",
+      "postalCode": "400072",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.0760,
-      "longitude": 72.8777
+      "latitude": 19.0956,
+      "longitude": 72.8839
     },
     "openingHoursSpecification": [
       {

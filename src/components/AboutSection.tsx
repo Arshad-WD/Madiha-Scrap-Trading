@@ -14,7 +14,7 @@ export default function AboutSection() {
             </h2>
             
             <p className="text-lg md:text-xl text-gray-600 mb-6">
-              For over a decade, Madiha Scrap Trading has been the trusted name in Mumbai&apos;s scrap recycling industry. We built our business on two simple principles: honest weighing and the best market prices.
+              For over 2 years, Madiha Scrap Trading has been the trusted name in Mumbai&apos;s scrap recycling industry. We built our business on two simple principles: honest weighing and the best market prices.
             </p>
             
             <p className="text-gray-600 mb-8">

@@ -15,9 +15,9 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <StatsBar />
+      <WorkCarousel />
       <ServicesSection />
       <MaterialsSection />
-      <WorkCarousel />
       <AboutSection />
       <ContactSection />
       <Footer />
