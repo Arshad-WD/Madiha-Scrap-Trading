@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     url: "https://madihascraptrading.com",
     siteName: "Madiha Scrap Trading",
   },
+  verification: {
+    google: "IiGdWGm3FIlBbWBsuI9P3IUm-s9g3SI-LxXZxYhwdsc",
+  },
 };
 
 export default function RootLayout({
