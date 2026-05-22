@@ -19,7 +19,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://*.unsplash.com https://i.pravatar.cc https://*.googletagmanager.com https://*.google-analytics.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.analytics.google.com; frame-src 'self' https://www.google.com https://maps.google.com; media-src 'self' https://www.w3schools.com blob: data:; object-src 'none';"
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: data: https://*.unsplash.com https://i.pravatar.cc https://*.googletagmanager.com https://*.google-analytics.com https://www.transparenttextures.com https://*.google.com https://*.google.co.in; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.analytics.google.com https://analytics.google.com https://www.google.com; frame-src 'self' https://www.google.com https://maps.google.com; media-src 'self' https://www.w3schools.com blob: data:; object-src 'none';"
           },
           {
             key: "X-Content-Type-Options",

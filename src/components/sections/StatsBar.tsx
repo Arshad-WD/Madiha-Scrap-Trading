@@ -5,10 +5,10 @@
 import { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { label: "YEARS EXPERIENCE", value: 2, suffix: "+" },
-  { label: "TONS MONTHLY", value: 100, suffix: "+" },
-  { label: "HAPPY CLIENTS", value: 150, suffix: "+" },
-  { label: "MATERIALS HANDLED", value: 30, suffix: "+" },
+  { label: "YEARS EXPERIENCE", value: 10, suffix: "+" },
+  { label: "TONS MONTHLY", value: 700, suffix: "+" },
+  { label: "HAPPY CLIENTS", value: 200, suffix: "+" },
+  { label: "MATERIALS HANDLED", value: 60, suffix: "+" },
 ];
 
 export default function StatsBar() {

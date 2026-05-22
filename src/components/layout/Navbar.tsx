@@ -5,11 +5,18 @@ import Link from "next/link";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Our Work", href: "#work" },
-  { name: "Services", href: "#services" },
-  { name: "Materials", href: "#materials" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "About us", href: "#about" },
+  { name: "Our Services", href: "#services" },
+  { 
+    name: "Gallery & Video", 
+    href: "#", 
+    dropdown: [
+      { name: "Interior Demolition", href: "#interior" },
+      { name: "Recent Clearances", href: "#work" }
+    ]
+  },
+  { name: "Clients", href: "#testimonials" },
+  { name: "Contact us", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -51,14 +58,39 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706]"
-              style={{ color: "var(--text-secondary)" }}
-            >
-              {link.name}
-            </Link>
+            link.dropdown ? (
+              <div key={link.name} className="relative group py-4">
+                <button
+                  className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706]"
+                  style={{ color: "var(--text-secondary)" }}
+                >
+                  {link.name}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 w-64 bg-white/95 backdrop-blur-md shadow-xl border border-gray-100 rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-3 group-hover:translate-y-0">
+                  {link.dropdown.map((dropItem) => (
+                    <Link
+                      key={dropItem.name}
+                      href={dropItem.href}
+                      className="block px-5 py-3 text-sm font-semibold uppercase tracking-wider text-gray-700 hover:bg-amber-50 hover:text-amber-700 hover:pl-6 transition-all duration-300"
+                    >
+                      {dropItem.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] py-4"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -97,15 +129,34 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 py-4 px-6 flex flex-col gap-4 md:hidden">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-base font-bold uppercase tracking-wider py-2"
-              style={{ color: "var(--text-primary)", borderBottom: "1px solid var(--border)" }}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
+            link.dropdown ? (
+              <div key={link.name} className="flex flex-col pt-2 pb-1 border-b border-gray-100">
+                <span className="text-base font-bold uppercase tracking-wider text-gray-900 mb-2">
+                  {link.name}
+                </span>
+                <div className="flex flex-col pl-4 border-l-2 border-amber-500 ml-1">
+                  {link.dropdown.map((dropItem) => (
+                    <Link
+                      key={dropItem.name}
+                      href={dropItem.href}
+                      className="text-sm font-bold uppercase tracking-wider py-2.5 text-gray-500 hover:text-amber-700"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {dropItem.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-base font-bold uppercase tracking-wider py-3 border-b border-gray-100 text-gray-900"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <a
             href="tel:+918291312506"

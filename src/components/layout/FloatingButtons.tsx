@@ -2,158 +2,77 @@ import React from "react";
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed bottom-4 right-3 md:bottom-6 md:right-8 z-[1000] flex flex-col items-center">
-      <style>{`
-        .industrial-dock {
-          background: rgba(17, 24, 39, 0.9);
-          backdrop-filter: blur(12px);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 40px;
-          padding: 10px 6px;
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          align-items: center;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-          position: relative;
-        }
-
-        @media (min-width: 768px) {
-          .industrial-dock {
-            padding: 12px 8px;
-            gap: 16px;
-          }
-        }
-
-        .status-light {
-          width: 6px;
-          height: 6px;
-          background: #10b981;
-          border-radius: 50%;
-          box-shadow: 0 0 8px #10b981;
-          animation: status-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-
-        @media (min-width: 768px) {
-          .status-light {
-            width: 8px;
-            height: 8px;
-          }
-        }
-
-        @keyframes status-pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: .4; transform: scale(0.9); }
-        }
-
-        .action-orb {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          position: relative;
-          color: white;
-          text-decoration: none;
-        }
-
-        @media (min-width: 768px) {
-          .action-orb {
-            width: 48px;
-            height: 48px;
-          }
-        }
-
-        .action-orb:hover {
-          transform: scale(1.1) translateY(-2px);
-        }
-
-        .orb-whatsapp {
-          background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-          box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-        }
-
-        .orb-call {
-          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-          box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
-        }
-
-        .orb-label {
-          position: absolute;
-          right: 100%;
-          margin-right: 20px;
-          background: #111827;
-          color: white;
-          padding: 8px 14px;
-          border-radius: 10px;
-          font-size: 13px;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          opacity: 0;
-          pointer-events: none;
-          transform: translateX(10px);
-          transition: all 0.3s ease;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          white-space: nowrap;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .action-orb:hover .orb-label {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
-        /* Ambient glow behind dock */
-        .dock-glow {
-          position: absolute;
-          inset: -10px;
-          background: radial-gradient(circle at center, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
-          pointer-events: none;
-          z-index: -1;
-        }
-      `}</style>
-
-      <div className="industrial-dock">
-        <div className="dock-glow" />
-        
-        {/* Status Indicator */}
-        <div className="flex flex-col items-center gap-0.5 mb-0.5">
-          <div className="status-light" />
-          <span className="text-[7px] md:text-[9px] font-black text-gray-400 uppercase tracking-tighter">Online</span>
-        </div>
-
-        {/* WhatsApp Orb */}
-        <a 
-          href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." 
-          target="_blank" 
+    <>
+      {/* 
+        ========================================================================
+        MOBILE VIEW: Native App-Like Bottom Bar
+        Spans full width, sticks to bottom, split 50/50 for extreme ease of use
+        ======================================================================== 
+      */}
+      <div className="md:hidden fixed bottom-0 left-0 w-full z-[1000] flex bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+        <a
+          href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates."
+          target="_blank"
           rel="noopener noreferrer"
-          className="action-orb orb-whatsapp"
-          aria-label="WhatsApp Us"
+          className="flex-1 flex flex-col items-center justify-center py-3 bg-emerald-50 text-emerald-700 active:bg-emerald-100 transition-colors border-r border-emerald-100"
         >
-          <span className="orb-label hidden md:block">Chat on WhatsApp</span>
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          <span className="text-[10px] font-bold uppercase tracking-widest">WhatsApp</span>
+        </a>
+        <a
+          href="tel:+918291312506"
+          className="flex-1 flex flex-col items-center justify-center py-3 bg-amber-500 text-white active:bg-amber-600 transition-colors relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.2)_50%,transparent_75%)] bg-[length:250%_250%,100%_100%] animate-[shimmer_3s_infinite]" />
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span className="text-[10px] font-bold uppercase tracking-widest relative z-10">Call Now</span>
+        </a>
+      </div>
+
+      {/* 
+        ========================================================================
+        DESKTOP VIEW: Sleek Floating Glass Widget
+        ======================================================================== 
+      */}
+      <div className="hidden md:flex fixed bottom-8 right-8 z-[1000] flex-col items-end gap-4">
+        
+        {/* Floating Call Widget */}
+        <a 
+          href="tel:+918291312506"
+          className="group flex items-center gap-4 bg-white/90 backdrop-blur-xl p-2 pr-6 rounded-full shadow-2xl border border-gray-100 hover:scale-105 transition-transform duration-300"
+        >
+          <div className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center shadow-lg relative">
+            <div className="absolute inset-0 rounded-full border-2 border-amber-400 animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]" />
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-[10px] font-black uppercase tracking-wider text-gray-400">Instant Estimate</span>
+            <span className="text-base font-bold text-gray-900 group-hover:text-amber-600 transition-colors">+91 82913 12506</span>
+          </div>
+        </a>
+
+        {/* WhatsApp Icon Only */}
+        <a 
+          href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative group"
+        >
+          <span className="absolute right-full mr-4 px-3 py-1.5 bg-gray-900 text-white text-xs font-bold uppercase tracking-wider rounded-lg border border-white/10 opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 pointer-events-none transition-all whitespace-nowrap">
+            Chat on WhatsApp
+          </span>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
         </a>
 
-        {/* Divider */}
-        <div className="w-4 md:w-6 h-[1px] bg-white/10" />
-
-        {/* Call Orb */}
-        <a 
-          href="tel:+918291312506" 
-          className="action-orb orb-call"
-          aria-label="Call Us"
-        >
-          <span className="orb-label hidden md:block">Call for Prices</span>
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg>
-        </a>
       </div>
-    </div>
+    </>
   );
 }

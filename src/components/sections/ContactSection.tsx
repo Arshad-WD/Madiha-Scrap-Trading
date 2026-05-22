@@ -50,7 +50,7 @@ export default function ContactSection() {
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-gray-900">Location</h4>
                   <p className="text-gray-600 break-words">
-                    Sanaullah Compound, next to Yogiraj school, Mayfair Industrial Area, Sathi D Souza Nagar, Saki Naka, Mumbai, Maharashtra - 400072
+                    GALA NO 50 NEHAL COMPUND PAHLWAN ESTATE 90 FEET RAOD SAKINAKA MUMBAI 400072
                   </p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function ContactSection() {
           <div className="h-[400px] lg:h-auto bg-gray-100">
             <iframe
               title="Madiha Scrap Trading Google Maps Location"
-              src={process.env.NEXT_PUBLIC_MAPS_EMBED_URL || "https://maps.google.com/maps?q=SANAULLAH%20COMPOUND%2C%20next%20to%20Yogiraj%20school%2C%20Mayfair%20Industrial%20Area%2C%20Sathi%20D%20Souza%20Nagar%2C%20Saki%20Naka%2C%20Mumbai%2C%20Maharashtra%20400072&t=&z=15&ie=UTF8&iwloc=&output=embed"}
+              src={process.env.NEXT_PUBLIC_MAPS_EMBED_URL || "https://maps.google.com/maps?q=GALA%20NO%2050%20NEHAL%20COMPUND%20PAHLWAN%20ESTATE%2090%20FEET%20RAOD%20SAKINAKA%20MUMBAI%20400072&t=&z=15&ie=UTF8&iwloc=&output=embed"}
               width="100%"
               height="100%"
               style={{ border: 0 }}

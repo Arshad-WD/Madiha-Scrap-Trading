@@ -46,10 +46,15 @@ export default function Footer() {
             <h4 className="font-bold uppercase tracking-wider mb-6 text-gray-900">Quick Links</h4>
             <ul className="flex flex-col gap-3 text-gray-600">
               <li><Link href="/" className="hover:text-amber-700 transition-colors">Home</Link></li>
-              <li><Link href="#work" className="hover:text-amber-700 transition-colors">Our Work</Link></li>
-              <li><Link href="#services" className="hover:text-amber-700 transition-colors">Services</Link></li>
-              <li><Link href="#materials" className="hover:text-amber-700 transition-colors">Materials</Link></li>
-              <li><Link href="#about" className="hover:text-amber-700 transition-colors">About Us</Link></li>
+              <li><Link href="#about" className="hover:text-amber-700 transition-colors">About us</Link></li>
+              <li><Link href="#services" className="hover:text-amber-700 transition-colors">Our Services</Link></li>
+              <li className="flex flex-col gap-1.5">
+                <span className="text-gray-500 text-xs uppercase tracking-widest font-bold">Gallery &amp; Video</span>
+                <Link href="#interior" className="pl-3 border-l-2 border-amber-400 hover:text-amber-700 transition-colors">Interior Demolition</Link>
+                <Link href="#work" className="pl-3 border-l-2 border-amber-400 hover:text-amber-700 transition-colors">Recent Clearances</Link>
+              </li>
+              <li><Link href="#testimonials" className="hover:text-amber-700 transition-colors">Clients</Link></li>
+              <li><Link href="#contact" className="hover:text-amber-700 transition-colors">Contact us</Link></li>
             </ul>
           </div>
 
@@ -58,7 +63,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 text-gray-600">
               <li className="flex gap-3 items-start">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 shrink-0 mt-0.5 text-amber-700"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                <span>{process.env.NEXT_PUBLIC_ADDRESS || "Sanaullah Compound, Saki Naka, Mumbai, Maharashtra - 400072"}</span>
+                <span>{process.env.NEXT_PUBLIC_ADDRESS || "GALA NO 50 NEHAL COMPUND PAHLWAN ESTATE 90 FEET RAOD SAKINAKA MUMBAI 400072"}</span>
               </li>
               <li className="flex gap-3 items-center">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 shrink-0 text-amber-700"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>

@@ -11,6 +11,7 @@ const materials = [
   { category: "Non-Ferrous", name: "Stainless Steel", desc: "304, 316 grade, utensils, vessels", color: "bg-amber-100 text-amber-700 border-amber-200" },
   { category: "Non-Ferrous", name: "Lead", desc: "Battery plates, cable sheathing, pipes", color: "bg-amber-100 text-amber-700 border-amber-200" },
   { category: "Non-Ferrous", name: "Zinc", desc: "Die castings, galvanised sheets, ingots", color: "bg-amber-100 text-amber-700 border-amber-200" },
+  { category: "Non-Ferrous", name: "Gun Metal", desc: "Valves, gears, bushes, bronze bearings", color: "bg-amber-100 text-amber-700 border-amber-200" },
   { category: "Electronics", name: "E-Waste", desc: "PCBs, CPUs, laptops, phones, servers", color: "bg-blue-100 text-blue-700 border-blue-200" },
   { category: "Paper", name: "Paper & Cardboard", desc: "Newspapers, cartons, office paper", color: "bg-green-100 text-green-700 border-green-200" },
   { category: "Plastic", name: "Plastic", desc: "PET bottles, HDPE, industrial plastic", color: "bg-purple-100 text-purple-700 border-purple-200" },
