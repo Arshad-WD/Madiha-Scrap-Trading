@@ -30,7 +30,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl mb-8 max-w-2xl text-gray-600">
-            Get the best market value for your commercial and industrial scrap. We offer honest weighing and free doorstep pickup across Mumbai.
+            Manage your commercial and industrial scrap on a global scale. We provide professional recycling and high-volume logistics solutions for businesses worldwide.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-gray-700 font-semibold">
