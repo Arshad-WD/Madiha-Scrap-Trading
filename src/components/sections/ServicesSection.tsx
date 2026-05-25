@@ -30,16 +30,7 @@ const services: Service[] = [
       </svg>
     ),
   },
-  {
-    num: "08",
-    title: "Bulk Pickup & Transport",
-    desc: "We arrange free transportation for large-volume scrap from factories, warehouses, and construction sites across Mumbai.",
-    Icon: () => (
-      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h8m-8 0a2 2 0 104 0m8 0a2 2 0 10-4 0m4 0H16m2-10l-3-4H9L6 9" />
-      </svg>
-    ),
-  },
+
 ];
 
 export default function ServicesSection() {

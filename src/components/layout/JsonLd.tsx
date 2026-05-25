@@ -10,8 +10,8 @@ export default function JsonLd() {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "SANAULLAH COMPOUND, next to Yogiraj school, Mayfair Industrial Area, Sathi D Souza Nagar",
-      "addressLocality": "Saki Naka",
+      "streetAddress": "Nehal compound, Gala No 50, Pahelwan Estate, near Masjid Darul Huda, Lokmanya Tilak Nagar",
+      "addressLocality": "Saki Naka, Mumbai",
       "addressRegion": "Maharashtra",
       "postalCode": "400072",
       "addressCountry": "IN"

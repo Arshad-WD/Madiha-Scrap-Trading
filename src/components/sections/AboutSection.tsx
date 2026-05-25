@@ -10,15 +10,15 @@ export default function AboutSection() {
           
           <div>
             <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-gray-900">
-              Why Choose <span className="text-amber-700">Madiha Scrap</span>
+              Welcome to <span className="text-amber-700">Madiha Scrap Trading</span>
             </h2>
             
             <p className="text-lg md:text-xl text-gray-600 mb-6">
-              For over 2 years, Madiha Scrap Trading has been the trusted name in Mumbai&apos;s scrap recycling industry. We built our business on two simple principles: honest weighing and the best market prices.
+              For over 10 years, Madiha Scrap Trading has been the trusted name in Mumbai&apos;s scrap recycling industry. We built our business on two simple principles: honest weighing and fair pricing.
             </p>
             
             <p className="text-gray-600 mb-8">
-              Whether you are an individual clearing out household scrap, or a large industrial plant needing regular clearance, we have the logistics, licensing, and capital to handle transactions of any size instantly.
+              As specialists in large-scale commercial and industrial clearance, we have the heavy-duty logistics, licensing, and capital to handle high-volume transactions instantly.
             </p>
 
 
@@ -45,18 +45,10 @@ export default function AboutSection() {
                 </svg>
               </div>
               <h3 className="font-bold text-lg mb-2 text-gray-900">200+ Clients</h3>
-              <p className="text-gray-600 text-sm">Trusted by households, factories, and commercial businesses alike.</p>
+              <p className="text-gray-600 text-sm">Trusted by factories and commercial businesses alike.</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2 text-gray-900">Best Market Rates</h3>
-              <p className="text-gray-600 text-sm">We constantly monitor market fluctuations to offer top value.</p>
-            </div>
+
 
           </div>
         </div>

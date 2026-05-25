@@ -27,7 +27,7 @@ export default function MaterialsSection() {
             What We <span className="text-amber-700">Buy</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            We purchase a wide variety of scrap materials at the best market rates.
+            We purchase a wide variety of scrap materials.
           </p>
         </div>
 

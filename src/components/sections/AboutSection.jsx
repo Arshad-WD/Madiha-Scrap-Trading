@@ -142,7 +142,7 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <p className="body-text text-lg font-bold text-primary">
-                Madiha Scrap Trading has been serving households, businesses, and industries for over 2 years.
+                Madiha Scrap Trading has been serving businesses and industries for over 10 years.
               </p>
               <p className="body-text text-text-secondary">
                 We believe in fair pricing, transparent weighing, and building long-term relationships with our customers. 

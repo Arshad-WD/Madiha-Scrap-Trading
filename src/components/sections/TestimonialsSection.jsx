@@ -41,12 +41,12 @@ const testimonials = [
   },
   {
     name: "Sunita Verma",
-    company: "Local Resident",
-    role: "Homeowner",
+    company: "Local Retailer",
+    role: "Store Owner",
     colSpan: "md:col-span-2 md:row-span-1",
     size: "text-lg",
     bg: "bg-amber-50",
-    text: "Cleared all my heavy household scrap from the 4th floor. Very polite staff and honest scales.",
+    text: "Cleared all my heavy commercial scrap from the 4th floor. Very polite staff and honest scales.",
   }
 ];
 
