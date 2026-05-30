@@ -79,7 +79,7 @@ export default function ContactSection() {
           <div className="h-[400px] lg:h-auto bg-gray-100">
             <iframe
               title="Madiha Scrap Trading Google Maps Location"
-              src={process.env.NEXT_PUBLIC_MAPS_EMBED_URL || "https://maps.google.com/maps?q=GALA%20NO%2050%20NEHAL%20COMPUND%20PAHLWAN%20ESTATE%2090%20FEET%20RAOD%20SAKINAKA%20MUMBAI%20400072&t=&z=15&ie=UTF8&iwloc=&output=embed"}
+              src={process.env.NEXT_PUBLIC_MAPS_EMBED_URL || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.1907606299656!2d72.88580507423565!3d19.099285551243003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b72fcb25b9%3A0x47bcb0c9d1b3c483!2sMADIHA%20SCRAP%20TRADING!5e0!3m2!1sen!2sin!4v1780155855893!5m2!1sen!2sin"}
               width="100%"
               height="100%"
               style={{ border: 0 }}
