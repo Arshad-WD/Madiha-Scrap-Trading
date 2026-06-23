@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Barlow, Barlow_Condensed, Bebas_Neue } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from '@/components/layout/GoogleAnalytics';
 import JsonLd from "@/components/layout/JsonLd";
@@ -11,20 +11,6 @@ const barlow = Barlow({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-barlow",
-  display: "swap",
-});
-
-const barlowCondensed = Barlow_Condensed({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-barlow-condensed",
-  display: "swap",
-});
-
-const bebasNeue = Bebas_Neue({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-bebas-neue",
   display: "swap",
 });
 
@@ -67,7 +53,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
       </head>
-      <body className={`${barlow.variable} ${barlowCondensed.variable} ${bebasNeue.variable}`}>
+      <body className={barlow.className}>
         <GTMHead />
         <GTMBody />
         <GoogleAnalytics />
