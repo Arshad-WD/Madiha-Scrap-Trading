@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 const demoItems = [
   { 
@@ -79,9 +78,8 @@ export default function InteriorDemolition() {
             const isActive = activeIndex === index;
             
             return (
-              <motion.div
+              <div
                 key={item.id}
-                layout
                 onClick={() => setActiveIndex(index)}
                 onMouseEnter={() => window.innerWidth >= 768 && setActiveIndex(index)}
                 className={`relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] group ${
@@ -124,7 +122,7 @@ export default function InteriorDemolition() {
                   </div>
 
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
