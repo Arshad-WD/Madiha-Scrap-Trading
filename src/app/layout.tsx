@@ -27,11 +27,6 @@ export const metadata: Metadata = {
   description: "Madiha Scrap Trading is the leading commercial and industrial scrap metal dealer in Mumbai. We buy and sell iron, copper, and aluminum at the best rates.",
   keywords: "scrap trading Mumbai, scrap dealer near me, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, Madiha Scrap Trading",
   robots: "index, follow",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
   alternates: {
     canonical: siteUrl,
   },
