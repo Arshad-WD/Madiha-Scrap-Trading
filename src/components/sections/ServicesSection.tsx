@@ -40,11 +40,11 @@ export default function ServicesSection() {
         
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <span className="inline-block h-1 w-10" style={{ background: "var(--accent)" }} />
+            <span className="inline-block h-1 w-10 bg-accent" />
             <span className="text-sm font-bold uppercase tracking-widest text-gray-600">What We Offer</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold uppercase" style={{ color: "var(--text-primary)" }}>
-            Our <span style={{ color: "var(--accent)" }}>Services</span>
+          <h2 className="text-4xl md:text-5xl font-bold uppercase text-text-primary">
+            Our <span className="text-accent">Services</span>
           </h2>
         </div>
 

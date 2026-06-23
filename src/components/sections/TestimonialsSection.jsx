@@ -80,7 +80,7 @@ export default function TestimonialsSection() {
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
         <div className="flex whitespace-nowrap animate-marquee items-center opacity-80 hover:opacity-100 transition-opacity duration-500">
           {[...clients, ...clients, ...clients].map((client, idx) => (
-            <span key={idx} className="text-4xl md:text-6xl font-black text-transparent px-8" style={{ WebkitTextStroke: "1px #94a3b8" }}>
+            <span key={idx} className="text-4xl md:text-6xl font-black text-transparent px-8 text-stroke">
               {client}
             </span>
           ))}
@@ -128,6 +128,9 @@ export default function TestimonialsSection() {
 
       <style>{`
         .outfit-font { font-family: var(--font-barlow), sans-serif; }
+        .text-stroke {
+          -webkit-text-stroke: 1px #94a3b8;
+        }
         @keyframes marquee {
           0% { transform: translateX(0%); }
           100% { transform: translateX(-33.33%); }

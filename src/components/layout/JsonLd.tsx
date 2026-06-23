@@ -1,11 +1,12 @@
 export default function JsonLd() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Madiha Scrap Trading",
-    "image": "https://madihascraptrading.com/logo.png",
-    "@id": "https://madihascraptrading.com",
-    "url": "https://madihascraptrading.com",
+    "image": `${siteUrl}/icon.svg`,
+    "@id": siteUrl,
+    "url": siteUrl,
     "telephone": "+918291312506",
     "priceRange": "$$",
     "address": {

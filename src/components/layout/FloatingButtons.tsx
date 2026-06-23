@@ -13,7 +13,7 @@ export default function FloatingButtons() {
         <a
           href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates."
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-3 bg-emerald-50 text-emerald-700 active:bg-emerald-100 transition-colors border-r border-emerald-100"
         >
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -61,7 +61,7 @@ export default function FloatingButtons() {
         <a 
           href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates."
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative group"
         >
           <span className="absolute right-full mr-4 px-3 py-1.5 bg-gray-900 text-white text-xs font-bold uppercase tracking-wider rounded-lg border border-white/10 opacity-0 group-hover:opacity-100 group-hover:-translate-x-1 pointer-events-none transition-all whitespace-nowrap">

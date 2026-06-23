@@ -34,17 +34,22 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
+
 export const metadata: Metadata = {
   title: "Madiha Scrap Trading | Buy & Sell Scrap Metal – Mumbai",
-  description: "Leading scrap metal dealer in Mumbai. We buy and sell iron, copper, aluminum, battery, and industrial scrap at best prices. Professional scrap trading services in Mumbai.",
+  description: "Madiha Scrap Trading is the leading commercial and industrial scrap metal dealer in Mumbai. We buy and sell iron, copper, and aluminum at the best rates.",
   keywords: "scrap trading Mumbai, scrap dealer near me, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, Madiha Scrap Trading",
   robots: "index, follow",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     title: "Madiha Scrap Trading | Buy & Sell Scrap Metal – Mumbai",
     description: "Leading scrap metal dealer in Mumbai. Best prices for your industrial and commercial scrap.",
     type: "website",
     locale: "en_IN",
-    url: "https://madihascraptrading.com",
+    url: siteUrl,
     siteName: "Madiha Scrap Trading",
   },
   verification: {
@@ -60,10 +65,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GTMHead />
         <JsonLd />
       </head>
       <body className={`${barlow.variable} ${barlowCondensed.variable} ${bebasNeue.variable}`}>
+        <GTMHead />
         <GTMBody />
         <GoogleAnalytics />
         {children}

@@ -37,8 +37,8 @@ export default function StatsBar() {
         <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-200">
           {stats.map((stat, index) => (
             <div key={index} className="p-8 text-center bg-white hover:bg-gray-50 transition-colors">
-              <div className="text-3xl md:text-5xl font-bold mb-2" style={{ color: "var(--accent)" }}>
-                {inView ? <Counter end={stat.value} /> : "0"}
+              <div className="text-3xl md:text-5xl font-bold mb-2 text-accent">
+                {inView ? <Counter end={stat.value} /> : stat.value}
                 {stat.suffix}
               </div>
               <div className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-600">

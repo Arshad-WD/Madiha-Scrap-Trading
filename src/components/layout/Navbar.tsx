@@ -31,10 +31,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-white py-5"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
+        isScrolled 
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-3 border-border-custom" 
+          : "bg-white py-5 border-transparent"
       }`}
-      style={{ borderBottom: isScrolled ? "1px solid var(--border)" : "1px solid transparent" }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
         
@@ -61,8 +62,7 @@ export default function Navbar() {
             link.dropdown ? (
               <div key={link.name} className="relative group py-4">
                 <button
-                  className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706]"
-                  style={{ color: "var(--text-secondary)" }}
+                  className="flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] text-text-secondary"
                 >
                   {link.name}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -85,8 +85,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] py-4"
-                style={{ color: "var(--text-secondary)" }}
+                className="text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] py-4 text-text-secondary"
               >
                 {link.name}
               </Link>
@@ -98,8 +97,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <a
             href="tel:+918291312506"
-            className="flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-transform hover:scale-105 shadow-md rounded-md"
-            style={{ background: "var(--accent)", color: "#000" }}
+            className="flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-transform hover:scale-105 shadow-md rounded-md bg-accent text-black"
           >
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -110,10 +108,9 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 text-text-primary"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
-          style={{ color: "var(--text-primary)" }}
         >
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isOpen ? (
@@ -160,8 +157,7 @@ export default function Navbar() {
           ))}
           <a
             href="tel:+918291312506"
-            className="mt-4 flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-wider rounded-md"
-            style={{ background: "var(--accent)", color: "#000" }}
+            className="mt-4 flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-wider rounded-md bg-accent text-black"
           >
             Call Now
           </a>
