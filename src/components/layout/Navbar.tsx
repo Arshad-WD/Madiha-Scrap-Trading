@@ -15,7 +15,6 @@ const navLinks = [
       { name: "Recent Clearances", href: "#work" }
     ]
   },
-  { name: "Clients", href: "#testimonials" },
   { name: "Contact us", href: "#contact" },
 ];
 

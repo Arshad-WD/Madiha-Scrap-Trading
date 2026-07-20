@@ -7,7 +7,6 @@ import WorkCarousel from '@/components/sections/WorkCarousel';
 import AboutSection from '@/components/sections/AboutSection';
 import ContactSection from '@/components/sections/ContactSection';
 import InteriorDemolition from '@/components/sections/InteriorDemolition';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/layout/FloatingButtons';
 
@@ -22,7 +21,6 @@ export default function Home() {
       <MaterialsSection />
       <InteriorDemolition />
       <WorkCarousel />
-      <TestimonialsSection />
       <ContactSection />
       <Footer />
       <FloatingButtons />

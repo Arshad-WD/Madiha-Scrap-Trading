@@ -53,7 +53,6 @@ export default function Footer() {
                 <Link href="#interior" className="pl-3 border-l-2 border-amber-400 hover:text-amber-700 transition-colors">Interior Demolition</Link>
                 <Link href="#work" className="pl-3 border-l-2 border-amber-400 hover:text-amber-700 transition-colors">Recent Clearances</Link>
               </li>
-              <li><Link href="#testimonials" className="hover:text-amber-700 transition-colors">Clients</Link></li>
               <li><Link href="#contact" className="hover:text-amber-700 transition-colors">Contact us</Link></li>
             </ul>
           </div>
