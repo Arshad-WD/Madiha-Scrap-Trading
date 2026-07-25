@@ -23,16 +23,16 @@ export const viewport: Viewport = {
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Madiha Scrap Trading | Buy & Sell Scrap Metal – Mumbai",
-  description: "Madiha Scrap Trading is the leading commercial and industrial scrap metal dealer in Mumbai. We buy and sell iron, copper, and aluminum at the best rates.",
-  keywords: "scrap trading Mumbai, scrap dealer near me, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, Madiha Scrap Trading",
+  title: "Madiha Scrap Trading | Best Scrap Dealer & Trader in Mumbai",
+  description: "Madiha Scrap Trading is Mumbai's leading scrap dealer, scrap trader, and commercial scrap metal buyer. We buy and recycle iron, copper, aluminum, and e-waste at top rates.",
+  keywords: "scrap dealer near me, scrap trader near me, bhangarwala near me, scrap buyer near me, scrap trading Mumbai, best scrap dealer in Mumbai, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, Madiha Scrap Trading",
   robots: "index, follow",
   alternates: {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Madiha Scrap Trading | Buy & Sell Scrap Metal – Mumbai",
-    description: "Leading scrap metal dealer in Mumbai. Best prices for your industrial and commercial scrap.",
+    title: "Madiha Scrap Trading | Best Scrap Dealer & Trader in Mumbai",
+    description: "Leading scrap dealer and trader in Mumbai. Best prices for your industrial, commercial, and electronic scrap.",
     type: "website",
     locale: "en_IN",
     url: siteUrl,

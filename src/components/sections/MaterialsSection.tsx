@@ -48,7 +48,7 @@ export default function MaterialsSection() {
 
         <div className="mt-16 bg-amber-50 rounded-2xl p-8 border border-amber-200 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Don't see your material listed?</h4>
+            <h4 className="text-lg font-bold text-gray-900 mb-1">{"Don't see your material listed?"}</h4>
             <p className="text-amber-800">We probably still buy it. Contact us for a quick quote.</p>
           </div>
           <a 

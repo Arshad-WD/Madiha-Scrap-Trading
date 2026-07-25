@@ -62,7 +62,7 @@ export default function InteriorDemolition() {
               Interior <span className="text-amber-500 font-black">Demolition</span>
             </h2>
             <p className="mt-4 text-zinc-400 max-w-xl text-lg">
-              We don't just buy scrap. Our specialized teams execute clean, noise-controlled, and systematic interior dismantling for commercial spaces.
+              {"We don't just buy scrap. Our specialized teams execute clean, noise-controlled, and systematic interior dismantling for commercial spaces."}
             </p>
           </div>
           

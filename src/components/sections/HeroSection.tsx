@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
             <span className="inline-block h-1 w-12 bg-accent" />
-            <span className="text-sm font-bold uppercase tracking-widest text-accent">Mumbai's Trusted Scrap Dealer</span>
+            <h2 className="text-sm font-bold uppercase tracking-widest text-accent">{"Mumbai's Trusted Scrap Dealer & Trader"}</h2>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-tight mb-6 text-text-primary">
