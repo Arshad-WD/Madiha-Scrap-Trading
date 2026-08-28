@@ -1,0 +1,53 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply py-24 bg-gray-50;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6 md:px-10;
+}
+
+.header {
+  @apply mb-12;
+}
+
+.headerBadge {
+  @apply flex items-center gap-3 mb-4;
+}
+
+.badgeLine {
+  @apply inline-block h-1 w-10 bg-accent;
+}
+
+.badgeText {
+  @apply text-sm font-bold uppercase tracking-widest text-gray-600;
+}
+
+.title {
+  @apply text-4xl md:text-5xl font-bold uppercase text-text-primary;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.card {
+  @apply bg-white p-8 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1 relative overflow-hidden;
+}
+
+.bgNumber {
+  @apply absolute -top-4 -right-4 text-8xl font-black text-gray-50 group-hover:text-amber-50 transition-colors pointer-events-none;
+}
+
+.iconBox {
+  @apply w-14 h-14 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors relative z-10;
+}
+
+.cardTitle {
+  @apply text-xl font-bold uppercase mb-3 relative z-10 text-gray-900 group-hover:text-amber-700 transition-colors;
+}
+
+.cardDesc {
+  @apply text-gray-600 leading-relaxed relative z-10;
+}

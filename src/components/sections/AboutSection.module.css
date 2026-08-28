@@ -1,0 +1,45 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply py-24 bg-white;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6 md:px-10;
+}
+
+.grid {
+  @apply grid lg:grid-cols-2 gap-16 items-center;
+}
+
+.heading {
+  @apply text-4xl md:text-5xl font-bold uppercase mb-6 text-gray-900;
+}
+
+.subtext {
+  @apply text-lg md:text-xl text-gray-600 mb-6;
+}
+
+.description {
+  @apply text-gray-600 mb-8;
+}
+
+.gridStats {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.statCard {
+  @apply bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow;
+}
+
+.iconBox {
+  @apply w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4;
+}
+
+.statTitle {
+  @apply font-bold text-lg mb-2 text-gray-900;
+}
+
+.statDesc {
+  @apply text-gray-600 text-sm;
+}

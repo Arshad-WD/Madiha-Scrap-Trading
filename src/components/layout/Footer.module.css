@@ -1,0 +1,97 @@
+@reference "../../app/globals.css";
+
+.footer {
+  @apply bg-white border-t border-gray-200;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6 md:px-10 py-16;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12;
+}
+
+.brandCol {
+  @apply lg:col-span-2;
+}
+
+.logo {
+  @apply flex items-center gap-2.5 mb-6;
+}
+
+.logoBox {
+  @apply relative flex items-center justify-center w-11 h-11 bg-gray-900 rounded-xl overflow-hidden shrink-0 shadow-md border-b-2 border-amber-500 transition-all group-hover:shadow-amber-500/20 group-hover:-translate-y-0.5;
+}
+
+.logoText {
+  @apply font-bold text-xl text-gray-900 tracking-tight uppercase;
+}
+
+.logoSubText {
+  @apply text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mt-1;
+}
+
+.brandDesc {
+  @apply text-gray-600 leading-relaxed mb-8 max-w-sm;
+}
+
+.socialRow {
+  @apply flex gap-3;
+}
+
+.socialLink {
+  @apply w-10 h-10 flex items-center justify-center border border-gray-200 rounded text-gray-600 hover:bg-gray-50 hover:text-amber-700 transition-colors;
+}
+
+.socialLinkWA {
+  @apply w-10 h-10 flex items-center justify-center border border-gray-200 rounded text-gray-600 hover:bg-green-50 hover:text-green-600 transition-colors;
+}
+
+.colTitle {
+  @apply font-bold uppercase tracking-wider mb-6 text-gray-900;
+}
+
+.linksList {
+  @apply flex flex-col gap-3 text-gray-600;
+}
+
+.linkItem {
+  @apply hover:text-amber-700 transition-colors;
+}
+
+.subTitle {
+  @apply text-gray-500 text-xs uppercase tracking-widest font-bold;
+}
+
+.galleryLink {
+  @apply pl-3 border-l-2 border-amber-400 hover:text-amber-700 transition-colors;
+}
+
+.contactList {
+  @apply flex flex-col gap-4 text-gray-600;
+}
+
+.contactItem {
+  @apply flex gap-3 items-start;
+}
+
+.contactItemCenter {
+  @apply flex gap-3 items-center;
+}
+
+.contactIcon {
+  @apply w-5 h-5 shrink-0 mt-0.5 text-amber-700;
+}
+
+.contactIconCenter {
+  @apply w-5 h-5 shrink-0 text-amber-700;
+}
+
+.bottomBar {
+  @apply bg-gray-50 border-t border-gray-200;
+}
+
+.bottomContainer {
+  @apply max-w-7xl mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600 font-semibold uppercase tracking-wider;
+}

@@ -1,0 +1,25 @@
+@reference "../../app/globals.css";
+
+.container {
+  @apply bg-white border-y border-gray-200;
+}
+
+.inner {
+  @apply max-w-7xl mx-auto;
+}
+
+.grid {
+  @apply grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-200;
+}
+
+.item {
+  @apply p-8 text-center bg-white hover:bg-gray-50 transition-colors;
+}
+
+.value {
+  @apply text-3xl md:text-5xl font-bold mb-2 text-accent;
+}
+
+.label {
+  @apply text-xs md:text-sm font-bold uppercase tracking-widest text-gray-600;
+}

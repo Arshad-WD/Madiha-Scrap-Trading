@@ -1,8 +1,7 @@
-
-
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import styles from "./StatsBar.module.css";
 
 const stats = [
   { label: "YEARS EXPERIENCE", value: 10, suffix: "+" },
@@ -32,16 +31,16 @@ export default function StatsBar() {
   }, []);
 
   return (
-    <div ref={ref} className="bg-white border-y border-gray-200">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gray-200">
+    <div ref={ref} className={styles.container}>
+      <div className={styles.inner}>
+        <div className={styles.grid}>
           {stats.map((stat, index) => (
-            <div key={index} className="p-8 text-center bg-white hover:bg-gray-50 transition-colors">
-              <div className="text-3xl md:text-5xl font-bold mb-2 text-accent">
+            <div key={index} className={styles.item}>
+              <div className={styles.value}>
                 {inView ? <Counter end={stat.value} /> : stat.value}
                 {stat.suffix}
               </div>
-              <div className="text-xs md:text-sm font-bold uppercase tracking-widest text-gray-600">
+              <div className={styles.label}>
                 {stat.label}
               </div>
             </div>
@@ -68,7 +67,7 @@ function Counter({ end, duration = 2000 }: { end: number; duration?: number }) {
       const easeOut = 1 - Math.pow(1 - percentage, 4);
       
       setCount(Math.floor(end * easeOut));
-
+ 
       if (percentage < 1) {
         animationFrame = requestAnimationFrame(animate);
       } else {

@@ -1,0 +1,133 @@
+@reference "../../app/globals.css";
+
+.section {
+  @apply py-24 bg-zinc-900 border-y border-zinc-950 overflow-hidden relative;
+}
+
+.carbonBg {
+  @apply absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 mix-blend-overlay pointer-events-none;
+}
+
+.blurBg {
+  @apply absolute top-0 right-0 w-[50vh] h-[50vh] bg-amber-600/10 blur-[120px] rounded-full pointer-events-none;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-6 md:px-10 relative z-10;
+}
+
+.header {
+  @apply flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12;
+}
+
+.headerBadge {
+  @apply flex items-center gap-3 mb-4;
+}
+
+.badgeLine {
+  @apply inline-block h-1 w-10 bg-amber-500;
+}
+
+.badgeText {
+  @apply text-sm font-bold uppercase tracking-widest text-zinc-400;
+}
+
+.title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold uppercase text-white;
+}
+
+.desc {
+  @apply mt-4 text-zinc-400 max-w-xl text-lg;
+}
+
+.bookLink {
+  @apply hidden md:flex items-center gap-2 text-amber-500 font-bold uppercase tracking-wider hover:text-white transition-colors;
+}
+
+.accordion {
+  @apply flex flex-col md:flex-row w-full h-[600px] md:h-[500px] gap-3 mt-10;
+}
+
+.accordionItem {
+  @apply relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)];
+}
+
+.activeItem {
+  @apply md:flex-[4] flex-[3];
+}
+
+.inactiveItem {
+  @apply md:flex-[1] flex-[0.5];
+}
+
+.accordionImage {
+  @apply object-cover transition-transform duration-1000;
+}
+
+.imageActive {
+  @apply scale-100;
+}
+
+.imageInactive {
+  @apply scale-110 grayscale-[30%] opacity-60 group-hover:opacity-100;
+}
+
+.gradientOverlay {
+  @apply absolute inset-0 transition-opacity duration-700;
+}
+
+.gradientActive {
+  @apply bg-gradient-to-t from-zinc-950/90 via-zinc-900/30 to-transparent;
+}
+
+.gradientInactive {
+  @apply bg-black/60 group-hover:bg-black/40;
+}
+
+.contentWrapper {
+  @apply absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end transition-opacity duration-500 whitespace-nowrap;
+}
+
+.contentActive {
+  @apply opacity-100 delay-200;
+}
+
+.contentInactive {
+  @apply opacity-0 md:opacity-100;
+}
+
+.verticalTitle {
+  @apply hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 origin-bottom -rotate-90 transition-all duration-500 whitespace-nowrap;
+}
+
+.vTitleActive {
+  @apply opacity-0 pointer-events-none blur-sm;
+}
+
+.vTitleInactive {
+  @apply opacity-100 delay-200;
+}
+
+.activeContentBlock {
+  @apply transform transition-all duration-700;
+}
+
+.acBlockActive {
+  @apply translate-y-0;
+}
+
+.acBlockInactive {
+  @apply translate-y-10 blur-sm pointer-events-none hidden md:block;
+}
+
+.numCircle {
+  @apply w-8 h-8 rounded-full bg-amber-500 text-zinc-900 flex items-center justify-center font-black text-xs;
+}
+
+.itemTitle {
+  @apply text-3xl lg:text-4xl font-bold uppercase text-white mb-2;
+}
+
+.itemDesc {
+  @apply text-zinc-300 font-medium whitespace-normal max-w-md line-clamp-2 md:line-clamp-none;
+}

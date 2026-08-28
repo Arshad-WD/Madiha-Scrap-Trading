@@ -1,4 +1,4 @@
-# Madiha Scrap Trading 🌐
+# Madiha Scrap Trading
 
 A professional, high-performance scrap trading platform built with Next.js 14+ and Tailwind CSS v4. This website is designed to provide seamless scrap buying services with modern features like a floating WhatsApp chat, sticky mobile navigation, and interactive elements.
 

@@ -1,6 +1,5 @@
-
-
 import React from "react";
+import styles from "./ServicesSection.module.css";
 
 interface Service {
   num: string;
@@ -30,45 +29,41 @@ const services: Service[] = [
       </svg>
     ),
   },
-
 ];
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+    <section id="services" className={styles.section}>
+      <div className={styles.container}>
         
-        <div className="mb-12">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="inline-block h-1 w-10 bg-accent" />
-            <span className="text-sm font-bold uppercase tracking-widest text-gray-600">What We Offer</span>
+        <div className={styles.header}>
+          <div className={styles.headerBadge}>
+            <span className={styles.badgeLine} />
+            <span className={styles.badgeText}>What We Offer</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold uppercase text-text-primary">
+          <h2 className={styles.title}>
             Our <span className="text-accent">Services</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className={styles.grid}>
           {services.map((service, i) => (
-            <div 
-              key={i} 
-              className="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1 relative overflow-hidden"
-            >
+            <div key={i} className={`group ${styles.card}`}>
               {/* Background Number */}
-              <div className="absolute -top-4 -right-4 text-8xl font-black text-gray-50 group-hover:text-amber-50 transition-colors pointer-events-none">
+              <div className={styles.bgNumber}>
                 {service.num}
               </div>
 
               {/* Icon Box */}
-              <div className="w-14 h-14 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors relative z-10">
+              <div className={styles.iconBox}>
                 <service.Icon />
               </div>
 
-              <h3 className="text-xl font-bold uppercase mb-3 relative z-10 text-gray-900 group-hover:text-amber-700 transition-colors">
+              <h3 className={styles.cardTitle}>
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed relative z-10">
+              <p className={styles.cardDesc}>
                 {service.desc}
               </p>
             </div>
