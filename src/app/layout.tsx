@@ -51,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="author" type="text/plain" href="/llms.txt" />
         <JsonLd />
       </head>
       <body className={barlow.className}>

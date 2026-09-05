@@ -1,32 +1,23 @@
 # Madiha Scrap Trading
 
-Madiha Scrap Trading is a leading licensed scrap metal dealer and commercial clearance company based in Saki Naka, Mumbai, Maharashtra, India. We buy, sell, and recycle various industrial, commercial, and household scrap materials at fair pricing with transparent weighing.
+> Premier licensed scrap dealer, industrial scrap trader, and commercial clearance specialist based in Saki Naka, Mumbai, Maharashtra, India.
 
-## Links & Resources
-- [Official Website](https://madiha-scrap-trading.vercel.app/) - Main homepage and instant estimation portal.
-- [About Us](https://madiha-scrap-trading.vercel.app/#about) - Learn about our 10+ years of experience in Saki Naka, Mumbai.
-- [Our Services](https://madiha-scrap-trading.vercel.app/#services) - Overview of our logistics, pickup, and clearance operations.
-- [Accepted Materials](https://madiha-scrap-trading.vercel.app/#materials) - Details on the ferrous, non-ferrous, and electronic scrap we buy.
-- [Interior Demolition](https://madiha-scrap-trading.vercel.app/#interior) - Dismantling services for offices, retail, and warehouses.
-- [Recent Clearances](https://madiha-scrap-trading.vercel.app/#work) - Gallery of our high-volume scrap clearances.
-- [WhatsApp Quote](https://wa.me/918291312506?text=Hello%21%20I%27d%20like%20to%20get%20a%20scrap%20price%20quote.) - Directly chat with us for a price quote.
+Madiha Scrap Trading provides professional scrap purchasing, factory dismantling, interior demolition, e-waste recycling, and heavy metal scrap logistics across Mumbai and Maharashtra. We offer digital weighing accuracy, instant cash/bank payments, and full GST billing compliance.
 
-## Materials We Buy
-We purchase ferrous, non-ferrous, industrial, and retail scrap:
-- **Iron Scrap**: MS plates, angles, rods, channels, castings.
-- **Copper Scrap**: Wires, pipes, motors, transformers.
-- **Aluminium**: Sheets, extrusions, cans, utensils.
-- **Steel Scrap**: Structural steel, TMT bars, beams.
-- **Brass**: Fittings, valves, castings, turnings.
-- **Stainless Steel**: 304 & 316 grade, utensils, vessels.
-- **Lead**: Battery plates, cable sheathing, pipes.
-- **Zinc**: Die castings, galvanised sheets, ingots.
-- **Gun Metal**: Valves, gears, bushes, bronze bearings.
-- **E-Waste**: PCBs, CPUs, laptops, phones, servers.
-- **Paper**: Newspapers, cartons, office paper.
-- **Plastic**: PET bottles, HDPE, industrial plastic.
-- **Industrial Machinery**: Old factory equipment, motors, pumps, presses.
+## Core Information & Contact
+- **Location**: Gala No. 50, Nehal Compound, Pahelwan Estate, Near Masjid Darul Huda, 90 Feet Road, Saki Naka, Mumbai, Maharashtra 400072, India
+- **Phone / Call**: +91 82913 12506 / +91 96195 90481
+- **WhatsApp**: [Chat on WhatsApp](https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates.)
+- **Email**: madihascraptrading@gmail.com
+- **Website**: https://madiha-scrap-trading.vercel.app
 
-## Services Offered
-- **Scrap Purchasing & Recycling**: Bulk pickup and processing of industrial and commercial scrap metals and e-waste.
-- **Interior Demolition & Dismantling**: Specialized dismantling for corporate offices, retail shops, warehouses (racking systems), restaurant fit-out removal, and bank strong rooms/vaults.
+## Section Navigation
+- [About Us](https://madiha-scrap-trading.vercel.app/#about): Company history, 10+ years experience, licensing, and environmental compliance.
+- [Services](https://madiha-scrap-trading.vercel.app/#services): Commercial scrap buying, factory clearance, e-waste, and 24/7 price inquiries.
+- [Accepted Materials](https://madiha-scrap-trading.vercel.app/#materials): Comprehensive list of ferrous, non-ferrous, e-waste, and industrial scrap accepted.
+- [Interior Demolition](https://madiha-scrap-trading.vercel.app/#interior): Commercial office, shop, bank, and warehouse dismantling solutions.
+- [Recent Projects](https://madiha-scrap-trading.vercel.app/#work): High-tonnage scrap clearance project gallery.
+- [Contact & Location](https://madiha-scrap-trading.vercel.app/#contact): Interactive map, phone numbers, and WhatsApp quote request.
+
+## Full Context Document for AI Agents
+- [Full LLM Knowledge Base](https://madiha-scrap-trading.vercel.app/llms-full.txt): Comprehensive technical breakdown of accepted materials, site clearance protocols, digital weighing procedures, and service coverage.
