@@ -17,9 +17,9 @@ export default function HeroSection() {
           </div>
           
           <h1 className={styles.heading}>
-            WE BUY <br/>
-            <span className="text-accent">&amp; SELL</span><br/>
-            ALL SCRAP
+            SCRAP DEALER <br/>
+            <span className="text-accent">&amp; TRADER</span><br/>
+            IN MUMBAI
           </h1>
           
           <p className={styles.description}>

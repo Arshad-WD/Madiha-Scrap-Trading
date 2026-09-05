@@ -9,7 +9,7 @@ export default function AboutSection() {
           
           <div>
             <h2 className={styles.heading}>
-              Welcome to <span className="text-amber-700">Madiha Scrap Trading</span>
+              Trusted <span className="text-amber-700">Scrap Dealer &amp; Trader</span> in Saki Naka, Mumbai
             </h2>
             
             <p className={styles.subtext}>
