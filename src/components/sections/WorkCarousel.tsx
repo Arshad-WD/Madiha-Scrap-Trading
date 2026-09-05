@@ -78,7 +78,7 @@ export default function WorkCarousel() {
                 className="absolute inset-0"
               >
                 {activeItem.src ? (
-                  <Image src={activeItem.src} alt={activeItem.title} fill sizes="(max-width: 768px) 100vw, 60vw" className="object-cover" />
+                  <Image src={activeItem.src} alt={activeItem.title} fill priority={activeIndex === 0} sizes="(max-width: 768px) 100vw, 60vw" className="object-cover" />
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900" />
                 )}
