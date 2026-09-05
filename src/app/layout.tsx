@@ -75,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="IiGdWGm3FIlBbWBsuI9P3IUm-s9g3SI-LxXZxYhwdsc" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="author" type="text/plain" href="/llms.txt" />
