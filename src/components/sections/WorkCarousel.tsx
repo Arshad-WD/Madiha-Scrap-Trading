@@ -6,13 +6,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "./WorkCarousel.module.css";
 
 const workItems = [
-  { id: 1, title: "Industrial Iron Scrap Clearance", weight: "12 Tons", category: "Iron", type: "image", src: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop" },
-  { id: 2, title: "Copper Wire & Cable Lot", weight: "850 KG", category: "Copper", type: "image", src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&auto=format&fit=crop" },
-  { id: 3, title: "Plant Machinery Liquidation", weight: "28 Tons", category: "Machinery", type: "image", src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop" },
-  { id: 4, title: "Aluminium Profile Scrap", weight: "3.2 Tons", category: "Aluminium", type: "image", src: "https://images.unsplash.com/photo-1567789884554-0b844b597180?q=80&w=1200&auto=format&fit=crop" },
-  { id: 5, title: "Battery & Industrial Plastics Lot", weight: "1.5 Tons", category: "Battery", type: "image", src: "https://images.unsplash.com/photo-1611284446314-60a55ac7deab?q=80&w=1200&auto=format&fit=crop" },
-  { id: 6, title: "E-Waste & IT Infrastructure Clearance", weight: "900 KG", category: "E-Waste", type: "image", src: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop" },
+  { id: 1, title: "Industrial Iron Scrap Clearance", weight: "12 Tons", category: "Iron", type: "image", src: "/images/service-metal.png" },
+  { id: 2, title: "Copper Wire & Cable Lot", weight: "850 KG", category: "Copper", type: "image", src: "/images/hero-1.png" },
+  { id: 3, title: "Plant Machinery Liquidation", weight: "28 Tons", category: "Machinery", type: "image", src: "/images/hero-2.png" },
+  { id: 4, title: "Aluminium Profile Scrap", weight: "3.2 Tons", category: "Aluminium", type: "image", src: "/images/hero-3.png" },
+  { id: 5, title: "Battery & Industrial Plastics Lot", weight: "1.5 Tons", category: "Battery", type: "image", src: "/images/service-plastic.png" },
+  { id: 6, title: "E-Waste & IT Infrastructure Clearance", weight: "900 KG", category: "E-Waste", type: "image", src: "/images/service-ewaste.png" },
 ];
+
 
 
 

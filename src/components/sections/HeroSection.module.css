@@ -1,118 +1,61 @@
 @reference "../../app/globals.css";
 
 .section {
-  @apply relative min-h-[92vh] flex flex-col justify-center bg-slate-900 text-white overflow-hidden pt-24 pb-16;
+  @apply relative min-h-[85vh] flex flex-col justify-center bg-gray-50 overflow-hidden pt-24 pb-16;
 }
 
 .bgGrid {
-  @apply absolute inset-0 pointer-events-none opacity-10;
-}
-
-.glowBg {
-  @apply absolute -top-40 -left-40 w-96 h-96 bg-amber-500/15 blur-[140px] rounded-full pointer-events-none;
-}
-
-.glowBg2 {
-  @apply absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-600/10 blur-[160px] rounded-full pointer-events-none;
+  @apply absolute inset-0 pointer-events-none opacity-20;
 }
 
 .contentContainer {
-  @apply relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full py-8 lg:py-12;
-}
-
-.grid {
-  @apply grid grid-cols-1 lg:grid-cols-12 gap-12 items-center;
-}
-
-.leftCol {
-  @apply lg:col-span-7 flex flex-col items-start;
+  @apply relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full py-12;
 }
 
 .badgeWrapper {
-  @apply flex items-center gap-3 mb-6 bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 rounded-full;
+  @apply flex items-center gap-3 mb-6;
 }
 
 .badgeLine {
-  @apply inline-block h-2 w-2 rounded-full bg-amber-500 animate-pulse;
+  @apply inline-block h-1 w-12 bg-amber-500;
 }
 
 .badgeText {
-  @apply text-xs md:text-sm font-bold uppercase tracking-widest text-amber-400;
+  @apply text-sm font-bold uppercase tracking-widest text-amber-600;
 }
 
 .heading {
-  @apply text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase leading-[1.05] tracking-tight mb-6 text-white;
-}
-
-.headingAccent {
-  @apply text-amber-400 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent;
+  @apply text-4xl sm:text-6xl md:text-7xl font-extrabold uppercase leading-tight mb-6 text-gray-900;
 }
 
 .description {
-  @apply text-base sm:text-lg lg:text-xl mb-8 text-slate-300 max-w-2xl leading-relaxed;
+  @apply text-lg md:text-xl mb-8 max-w-2xl text-gray-600 leading-relaxed;
 }
 
 .featureGrid {
-  @apply grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-10 text-slate-200 font-semibold text-sm sm:text-base w-full;
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-gray-700 font-semibold text-base max-w-2xl;
 }
 
 .featureItem {
-  @apply flex items-center gap-3 bg-slate-800/60 border border-slate-700/80 px-4 py-3 rounded-xl backdrop-blur-sm transition-colors hover:border-amber-500/50;
+  @apply flex items-center gap-2.5;
 }
 
 .buttonGroup {
-  @apply flex flex-col sm:flex-row gap-4 w-full sm:w-auto;
+  @apply flex flex-col sm:flex-row gap-4 pb-8;
 }
 
 .primaryButton {
-  @apply flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-xl shadow-xl shadow-amber-500/20 transition-all hover:-translate-y-1 hover:shadow-amber-500/40 bg-amber-500 text-slate-950 hover:bg-amber-400;
+  @apply flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md shadow-lg transition-transform hover:-translate-y-1 bg-amber-500 hover:bg-amber-400 text-black;
 }
 
 .secondaryButton {
-  @apply flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-xl transition-all hover:-translate-y-1 bg-emerald-600/90 hover:bg-emerald-500 text-white shadow-lg shadow-emerald-900/30 border border-emerald-400/30;
-}
-
-.rightCol {
-  @apply lg:col-span-5 relative w-full mt-4 lg:mt-0;
-}
-
-.heroCard {
-  @apply relative rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-800 min-h-[380px] sm:min-h-[460px] flex flex-col justify-end;
-}
-
-
-.heroCardImage {
-  @apply object-cover transition-transform duration-1000 group-hover:scale-105;
-}
-
-.heroCardOverlay {
-  @apply absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent;
-}
-
-.heroCardBadgeTop {
-  @apply absolute top-6 left-6 bg-slate-900/90 backdrop-blur-md border border-amber-500/40 px-4 py-2 rounded-2xl flex items-center gap-3 shadow-xl;
-}
-
-.heroCardBadgeBottom {
-  @apply relative z-10 p-6 sm:p-8;
-}
-
-.heroCardTitle {
-  @apply text-2xl font-bold uppercase text-white mb-2;
-}
-
-.heroCardSub {
-  @apply text-sm text-slate-300 mb-4 font-medium;
-}
-
-.heroStatRow {
-  @apply flex flex-wrap items-center gap-3 pt-4 border-t border-slate-700/60 text-xs font-bold text-amber-400 uppercase tracking-wider;
+  @apply flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-wider rounded-md transition-all hover:bg-green-50 border-2 border-green-600 text-green-600;
 }
 
 .tickerWrapper {
-  @apply relative z-20 w-full overflow-hidden bg-slate-950 border-t border-slate-800 py-3.5;
+  @apply absolute bottom-0 w-full overflow-hidden bg-white border-t border-b border-gray-200 py-3;
 }
 
 .tickerContent {
-  @apply font-bold tracking-widest text-xs sm:text-sm text-amber-400/90;
+  @apply font-bold tracking-widest text-sm text-gray-800;
 }
