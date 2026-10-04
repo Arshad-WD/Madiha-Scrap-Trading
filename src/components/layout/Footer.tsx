@@ -109,17 +109,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Local SEO Service Areas */}
-        <div className="mt-12 pt-8 border-t border-gray-100">
-          <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Primary Service Coverage Areas in Mumbai MMR:</p>
-          <div className="flex flex-wrap gap-2 text-xs text-gray-600">
-            {["Saki Naka", "Andheri East", "Andheri West", "Kurla", "Powai", "Chandivali", "MIDC Industrial Zone", "BKC", "Ghatkopar", "Vidyavihar", "Kanjurmarg", "Bhandup", "Mulund", "Thane", "Navi Mumbai", "Kalyan", "Bhiwandi"].map((location) => (
-              <span key={location} className="bg-gray-100 hover:bg-amber-100 hover:text-amber-800 transition-colors px-2.5 py-1 rounded-md border border-gray-200">
-                Scrap Dealer in {location}
-              </span>
-            ))}
-          </div>
-        </div>
+
       </div>
 
       <div className={styles.bottomBar}>
