@@ -22,10 +22,19 @@ export const viewport: Viewport = {
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Madiha Scrap Trading | Best Scrap Dealer & Trader in Mumbai",
   description: "Madiha Scrap Trading is Mumbai's leading scrap dealer, scrap trader, and commercial scrap metal buyer. We buy and recycle iron, copper, aluminum, e-waste, and execute interior demolition at top rates.",
-  keywords: "scrap dealer near me, scrap trader near me, bhangarwala near me, scrap buyer near me, scrap trading Mumbai, best scrap dealer in Mumbai, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, interior demolition Mumbai, Madiha Scrap Trading",
+  keywords: "scrap dealer near me, scrap trader near me, bhangarwala near me, scrap buyer near me, scrap trading Mumbai, best scrap dealer in Mumbai, iron scrap buyer Mumbai, copper scrap price Mumbai, aluminum scrap dealer, battery scrap buyer, industrial scrap trading, interior demolition Mumbai, Madiha Scrap Trading, Saki Naka scrap dealer, Andheri scrap buyer, Thane scrap trader",
   category: "Business & Industrial > Recycling & Waste Management",
+  authors: [{ name: "Madiha Scrap Trading Co.", url: siteUrl }],
+  creator: "Madiha Scrap Trading Co.",
+  publisher: "Madiha Scrap Trading Co.",
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
   robots: {
     index: true,
     follow: true,
@@ -39,6 +48,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: siteUrl,
+    types: {
+      'application/rss+xml': `${siteUrl}/sitemap.xml`,
+    },
   },
   openGraph: {
     title: "Madiha Scrap Trading | Best Scrap Dealer & Trader in Mumbai",
@@ -49,7 +61,7 @@ export const metadata: Metadata = {
     siteName: "Madiha Scrap Trading",
     images: [
       {
-        url: `${siteUrl}/icon.svg`,
+        url: `${siteUrl}/logo.jpg`,
         width: 1200,
         height: 630,
         alt: "Madiha Scrap Trading Logo",
@@ -60,10 +72,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Madiha Scrap Trading | Scrap Dealer & Trader Mumbai",
     description: "Leading scrap dealer in Mumbai. High-volume pickup, digital scale accuracy, and instant payment.",
-    images: [`${siteUrl}/icon.svg`],
+    images: [`${siteUrl}/logo.jpg`],
   },
+
   verification: {
     google: "IiGdWGm3FIlBbWBsuI9P3IUm-s9g3SI-LxXZxYhwdsc",
+  },
+  other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Saki Naka, Mumbai",
+    "geo.position": "19.0956;72.8839",
+    "ICBM": "19.0956, 72.8839",
   },
 };
 
@@ -76,9 +95,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="IiGdWGm3FIlBbWBsuI9P3IUm-s9g3SI-LxXZxYhwdsc" />
+        <meta name="geo.region" content="IN-MH" />
+        <meta name="geo.placename" content="Saki Naka, Mumbai, Maharashtra" />
+        <meta name="geo.position" content="19.0956;72.8839" />
+        <meta name="ICBM" content="19.0956, 72.8839" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="author" type="text/plain" href="/llms.txt" />
+        <link rel="help" type="text/plain" href="/llms-full.txt" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <JsonLd />
       </head>
       <body className={barlow.className}>
@@ -90,3 +115,4 @@ export default function RootLayout({
     </html>
   );
 }
+

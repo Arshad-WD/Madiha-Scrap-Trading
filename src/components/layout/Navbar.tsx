@@ -2,22 +2,26 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
+
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About us", href: "#about" },
+  { name: "About Us", href: "#about" },
   { name: "Our Services", href: "#services" },
+  { name: "Materials", href: "#materials" },
   { 
-    name: "Gallery & Video", 
+    name: "Gallery & Demolition", 
     href: "#", 
     dropdown: [
       { name: "Interior Demolition", href: "#interior" },
       { name: "Recent Clearances", href: "#work" }
     ]
   },
-  { name: "Contact us", href: "#contact" },
+  { name: "Contact Us", href: "#contact" },
 ];
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,21 +42,18 @@ export default function Navbar() {
       <div className={styles.container}>
         
         {/* Logo */}
-        <Link href="/" className={`group ${styles.logo}`}>
-          <div className={styles.logoBox}>
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
-            <span className="font-display text-2xl text-white z-10 translate-y-[1px]">M</span>
-            <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-amber-500/20 to-transparent" />
-          </div>
-          <div className="flex flex-col leading-none">
-            <span className={styles.logoText}>
-              Madiha <span className="text-amber-700">Scrap</span>
-            </span>
-            <span className={styles.logoSubText}>
-              Trading Co.
-            </span>
-          </div>
+        <Link href="/" className="flex items-center gap-2 py-1">
+          <Image
+            src="/images/logo.jpeg"
+            alt="Madiha Scrap Trading"
+            width={240}
+            height={70}
+            priority
+            className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-sm"
+          />
         </Link>
+
+
 
         {/* Desktop Nav */}
         <nav className={styles.nav}>

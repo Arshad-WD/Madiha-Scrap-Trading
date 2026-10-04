@@ -8,39 +8,40 @@ const demoItems = [
   { 
     id: 1, 
     title: "Corporate Office Dismantling", 
-    desc: "Complete removal of glass partitions, false ceilings, and flooring.", 
+    desc: "Complete removal of glass partitions, acoustic false ceilings, cabling, and modular flooring.", 
     type: "image", 
-    src: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop"
+    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
   },
   { 
     id: 2, 
     title: "Retail Shop Clearance", 
-    desc: "Swift night-time demolition of shop fixtures and heavy displays.", 
+    desc: "Swift night-time demolition of retail shop displays, counters, and steel fixtures.", 
     type: "image", 
-    src: "/images/service-metal.png"
+    src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop"
   },
   { 
     id: 3, 
     title: "Warehouse Racking", 
-    desc: "Dismantling high-bay racking systems and mezzanine floors.", 
+    desc: "Dismantling high-bay pallet racking systems, steel mezzanines, and industrial shelving.", 
     type: "image", 
-    src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop"
+    src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop"
   },
   { 
     id: 4, 
     title: "Restaurant Fit-Out Removal", 
-    desc: "Safe extraction of commercial kitchens and HVAC systems.", 
+    desc: "Safe extraction of commercial stainless steel kitchens, exhaust hoods, and HVAC ductwork.", 
     type: "image", 
-    src: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop"
+    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop"
   },
   { 
     id: 5, 
     title: "Bank Interiors", 
-    desc: "Secure dismantling of strong rooms and heavy vault doors.", 
+    desc: "Secure dismantling of strong rooms, teller counters, and heavy steel vault structures.", 
     type: "image", 
-    src: "/images/service-metal.png"
+    src: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?q=80&w=1200&auto=format&fit=crop"
   }
 ];
+
 
 export default function InteriorDemolition() {
   const [activeIndex, setActiveIndex] = useState(0);

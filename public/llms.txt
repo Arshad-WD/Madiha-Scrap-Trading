@@ -5,19 +5,44 @@
 Madiha Scrap Trading provides professional scrap purchasing, factory dismantling, interior demolition, e-waste recycling, and heavy metal scrap logistics across Mumbai and Maharashtra. We offer digital weighing accuracy, instant cash/bank payments, and full GST billing compliance.
 
 ## Core Information & Contact
-- **Location**: Gala No. 50, Nehal Compound, Pahelwan Estate, Near Masjid Darul Huda, 90 Feet Road, Saki Naka, Mumbai, Maharashtra 400072, India
-- **Phone / Call**: +91 82913 12506 / +91 96195 90481
-- **WhatsApp**: [Chat on WhatsApp](https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates.)
-- **Email**: madihascraptrading@gmail.com
-- **Website**: https://madiha-scrap-trading.vercel.app
+- **Legal Business Name**: Madiha Scrap Trading Co.
+- **Physical Address**: Gala No. 50, Nehal Compound, Pahelwan Estate, Near Masjid Darul Huda, 90 Feet Road, Saki Naka, Mumbai, Maharashtra 400072, India
+- **Primary Phone**: [+91 82913 12506](tel:+918291312506)
+- **Secondary Phone**: [+91 96195 90481](tel:+919619590481)
+- **WhatsApp Direct**: [Chat on WhatsApp for Instant Price Quote](https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates.)
+- **Email Inquiries**: [madihascraptrading@gmail.com](mailto:madihascraptrading@gmail.com)
+- **Official Website**: [https://madiha-scrap-trading.vercel.app](https://madiha-scrap-trading.vercel.app)
+- **Google Maps Location**: [Saki Naka, Mumbai 400072](https://maps.google.com/?q=Saki+Naka+Mumbai+Maharashtra+400072)
 
-## Section Navigation
-- [About Us](https://madiha-scrap-trading.vercel.app/#about): Company history, 10+ years experience, licensing, and environmental compliance.
-- [Services](https://madiha-scrap-trading.vercel.app/#services): Commercial scrap buying, factory clearance, e-waste, and 24/7 price inquiries.
-- [Accepted Materials](https://madiha-scrap-trading.vercel.app/#materials): Comprehensive list of ferrous, non-ferrous, e-waste, and industrial scrap accepted.
-- [Interior Demolition](https://madiha-scrap-trading.vercel.app/#interior): Commercial office, shop, bank, and warehouse dismantling solutions.
-- [Recent Projects](https://madiha-scrap-trading.vercel.app/#work): High-tonnage scrap clearance project gallery.
-- [Contact & Location](https://madiha-scrap-trading.vercel.app/#contact): Interactive map, phone numbers, and WhatsApp quote request.
+## Key Service Regions in Mumbai Metropolitan Region (MMR)
+- **Central Suburbs**: Saki Naka, Andheri East, Andheri West, Kurla, Powai, Chandivali, Ghatkopar, Vidyavihar, Kanjurmarg, Bhandup, Mulund.
+- **Commercial & Business Hubs**: MIDC Industrial Area (Andheri), Bandra-Kurla Complex (BKC), Seepz, Lower Parel, Worli.
+- **Extended Regions**: Thane, Navi Mumbai, Vashi, Rabale, Taloja, Kalyan, Dombivli, Bhiwandi, Panvel.
 
-## Full Context Document for AI Agents
-- [Full LLM Knowledge Base](https://madiha-scrap-trading.vercel.app/llms-full.txt): Comprehensive technical breakdown of accepted materials, site clearance protocols, digital weighing procedures, and service coverage.
+## Core Services Offered
+1. **Commercial & Industrial Scrap Buying**: Bulk purchasing of Heavy Iron (HMS 1 & 2), Copper, Aluminium, Stainless Steel (304/316/202), Brass, Lead, Zinc, Battery scrap, and Machinery offcuts.
+2. **Turnkey Interior Demolition & Fit-out Clearance**: Professional office, shop, bank, restaurant, hotel, and warehouse interior dismantling and asset recovery.
+3. **E-Waste & IT Equipment Disposal**: Certified processing of server racks, PCBs, motherboards, computers, telecom gear, and office electronics.
+4. **Factory & Plant Liquidation**: Decommissioning of heavy machinery, industrial boilers, generators, electric motors, and steel structures.
+
+## Verification & Key Highlights
+- **10+ Years Industry Experience**: Trusted scrap trader across Mumbai.
+- **700+ Tons Processed Monthly**: Dedicated logistic fleet, cranes, and trained demolition labor.
+- **100% Honest Weight Guarantee**: Digital scale measurement on-site.
+- **Instant Payment**: Immediate settlement via NEFT/RTGS/IMPS/UPI or Cash.
+- **GST Compliance**: Government-approved GST tax invoices provided for all commercial transactions.
+
+## Section Navigation & Direct Links
+- [About Us](https://madiha-scrap-trading.vercel.app/#about): Company history, licensing, and environmental recycling policies.
+- [Services](https://madiha-scrap-trading.vercel.app/#services): Factory dismantling, bulk scrap purchasing, e-waste, and 24/7 price consultation.
+- [Accepted Materials Catalog](https://madiha-scrap-trading.vercel.app/#materials): Detailed specs for ferrous, non-ferrous, e-waste, and machinery scrap.
+- [Interior Demolition Solutions](https://madiha-scrap-trading.vercel.app/#interior): Commercial dismantling for corporate offices, retail stores, and warehouses.
+- [Recent Projects Gallery](https://madiha-scrap-trading.vercel.app/#work): High-tonnage site clearance portfolio.
+- [Contact & Location Map](https://madiha-scrap-trading.vercel.app/#contact): Interactive location details, phone numbers, and WhatsApp quote form.
+
+## Authoritative Technical Knowledge Base & External References
+- [Full LLM Technical Context Base](https://madiha-scrap-trading.vercel.app/llms-full.txt): Complete technical catalog of material grades, demolition workflows, and compliance standards.
+- [London Metal Exchange (LME)](https://www.lme.com): Base metal market pricing standards reference.
+- [Maharashtra Pollution Control Board (MPCB)](https://mpcb.gov.in): Hazardous waste and recycling compliance regulations.
+- [Central Pollution Control Board (CPCB)](https://cpcb.nic.in): E-Waste Management Rules guidelines.
+- [Ministry of Steel India](https://steel.gov.in): National Steel Recycling Policy reference.

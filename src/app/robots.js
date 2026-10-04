@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://madiha-scrap-trading.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
 
   return {
     rules: [
@@ -19,6 +19,8 @@ export default function robots() {
           "Bytespider",
           "CCBot",
           "cohere-ai",
+          "Meta-ExternalAgent",
+          "Applebot-Extended",
         ],
         allow: "/",
       },
@@ -26,3 +28,4 @@ export default function robots() {
     sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
+

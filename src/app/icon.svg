@@ -1,6 +1,12 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="14" fill="#111827"/>
-  <rect x="0" y="32" width="64" height="32" fill="#f59e0b" opacity="0.2"/>
-  <rect x="0" y="60" width="64" height="4" fill="#f59e0b"/>
-  <text x="32" y="46" font-family="'Arial', sans-serif" font-size="36" font-weight="900" fill="#ffffff" text-anchor="middle">M</text>
+  <rect width="64" height="64" rx="14" fill="#0A192F"/>
+  <!-- Left navy leg -->
+  <path d="M12 48 V16 L26 32 V48 H12 Z" fill="#1E3A8A"/>
+  <!-- Center diagonal -->
+  <path d="M26 32 L40 16 V48 H34 V28 L26 38 Z" fill="#0F172A"/>
+  <!-- Right orange leg -->
+  <path d="M40 16 L52 48 H40 V28 L40 16 Z" fill="#F97316"/>
+  <!-- Orange accent fill -->
+  <path d="M34 48 L48 32 H52 V48 Z" fill="#EA580C"/>
 </svg>
+

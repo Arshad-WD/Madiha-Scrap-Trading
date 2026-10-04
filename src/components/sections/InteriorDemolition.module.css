@@ -45,20 +45,21 @@
 }
 
 .accordion {
-  @apply flex flex-col md:flex-row w-full h-[600px] md:h-[500px] gap-3 mt-10;
+  @apply flex flex-col md:flex-row w-full h-auto md:h-[500px] gap-3 mt-10;
 }
 
 .accordionItem {
-  @apply relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)];
+  @apply relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] min-h-[120px] md:min-h-0;
 }
 
 .activeItem {
-  @apply md:flex-[4] flex-[3];
+  @apply md:flex-[4] flex-[3] min-h-[300px] md:min-h-0;
 }
 
 .inactiveItem {
-  @apply md:flex-[1] flex-[0.5];
+  @apply md:flex-[1] flex-[1] min-h-[100px] md:min-h-0;
 }
+
 
 .accordionImage {
   @apply object-cover transition-transform duration-1000;
