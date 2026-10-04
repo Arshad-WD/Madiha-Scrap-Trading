@@ -19,7 +19,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madihascraptrading.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

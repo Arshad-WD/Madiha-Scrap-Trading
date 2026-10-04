@@ -11,7 +11,7 @@ Madiha Scrap Trading provides professional scrap purchasing, factory dismantling
 - **Secondary Phone**: [+91 96195 90481](tel:+919619590481)
 - **WhatsApp Direct**: [Chat on WhatsApp for Instant Price Quote](https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates.)
 - **Email Inquiries**: [madihascraptrading@gmail.com](mailto:madihascraptrading@gmail.com)
-- **Official Website**: [https://madiha-scrap-trading.vercel.app](https://madiha-scrap-trading.vercel.app)
+- **Official Website**: [https://madihascraptrading.com](https://madihascraptrading.com)
 - **Google Maps Location**: [Saki Naka, Mumbai 400072](https://maps.google.com/?q=Saki+Naka+Mumbai+Maharashtra+400072)
 
 ## Key Service Regions in Mumbai Metropolitan Region (MMR)
@@ -33,15 +33,15 @@ Madiha Scrap Trading provides professional scrap purchasing, factory dismantling
 - **GST Compliance**: Government-approved GST tax invoices provided for all commercial transactions.
 
 ## Section Navigation & Direct Links
-- [About Us](https://madiha-scrap-trading.vercel.app/#about): Company history, licensing, and environmental recycling policies.
-- [Services](https://madiha-scrap-trading.vercel.app/#services): Factory dismantling, bulk scrap purchasing, e-waste, and 24/7 price consultation.
-- [Accepted Materials Catalog](https://madiha-scrap-trading.vercel.app/#materials): Detailed specs for ferrous, non-ferrous, e-waste, and machinery scrap.
-- [Interior Demolition Solutions](https://madiha-scrap-trading.vercel.app/#interior): Commercial dismantling for corporate offices, retail stores, and warehouses.
-- [Recent Projects Gallery](https://madiha-scrap-trading.vercel.app/#work): High-tonnage site clearance portfolio.
-- [Contact & Location Map](https://madiha-scrap-trading.vercel.app/#contact): Interactive location details, phone numbers, and WhatsApp quote form.
+- [About Us](https://madihascraptrading.com/#about): Company history, licensing, and environmental recycling policies.
+- [Services](https://madihascraptrading.com/#services): Factory dismantling, bulk scrap purchasing, e-waste, and 24/7 price consultation.
+- [Accepted Materials Catalog](https://madihascraptrading.com/#materials): Detailed specs for ferrous, non-ferrous, e-waste, and machinery scrap.
+- [Interior Demolition Solutions](https://madihascraptrading.com/#interior): Commercial dismantling for corporate offices, retail stores, and warehouses.
+- [Recent Projects Gallery](https://madihascraptrading.com/#work): High-tonnage site clearance portfolio.
+- [Contact & Location Map](https://madihascraptrading.com/#contact): Interactive location details, phone numbers, and WhatsApp quote form.
 
 ## Authoritative Technical Knowledge Base & External References
-- [Full LLM Technical Context Base](https://madiha-scrap-trading.vercel.app/llms-full.txt): Complete technical catalog of material grades, demolition workflows, and compliance standards.
+- [Full LLM Technical Context Base](https://madihascraptrading.com/llms-full.txt): Complete technical catalog of material grades, demolition workflows, and compliance standards.
 - [London Metal Exchange (LME)](https://www.lme.com): Base metal market pricing standards reference.
 - [Maharashtra Pollution Control Board (MPCB)](https://mpcb.gov.in): Hazardous waste and recycling compliance regulations.
 - [Central Pollution Control Board (CPCB)](https://cpcb.nic.in): E-Waste Management Rules guidelines.

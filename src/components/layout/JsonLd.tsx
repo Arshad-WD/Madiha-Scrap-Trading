@@ -1,5 +1,5 @@
 export default function JsonLd() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madihascraptrading.com";
 
   const jsonLdGraph = {
     "@context": "https://schema.org",

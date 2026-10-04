@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madiha-scrap-trading.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://madihascraptrading.com";
   const lastModified = new Date();
 
   const routes = [

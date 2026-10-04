@@ -36,7 +36,7 @@ User-agent: Applebot-Extended
 Allow: /
 
 # LLM Knowledge Base
-# LLM Context File: https://madiha-scrap-trading.vercel.app/llms.txt
-# Full Technical Context: https://madiha-scrap-trading.vercel.app/llms-full.txt
+# LLM Context File: https://madihascraptrading.com/llms.txt
+# Full Technical Context: https://madihascraptrading.com/llms-full.txt
 
-Sitemap: https://madiha-scrap-trading.vercel.app/sitemap.xml
+Sitemap: https://madihascraptrading.com/sitemap.xml
