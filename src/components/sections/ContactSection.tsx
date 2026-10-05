@@ -6,13 +6,9 @@ export default function ContactSection() {
     <section id="contact" className={styles.section}>
       <div className={styles.container}>
         
-        <div className={styles.header}>
-          <h2 className={styles.title}>
-            Ready to <span className="text-amber-700">Sell Scrap?</span>
-          </h2>
-          <p className={styles.subtitle}>
-            Contact us today for a free estimate and rapid pickup service.
-          </p>
+        {/* Section Title */}
+        <div className={styles.sectionTitle}>
+          <h2>Contact Us</h2>
         </div>
 
         <div className={styles.card}>
@@ -49,7 +45,7 @@ export default function ContactSection() {
                 <div className="min-w-0 flex-1">
                   <h4 className={styles.itemLabel}>Location</h4>
                   <p className={styles.itemDetail}>
-                    GALA NO 50 NEHAL COMPUND PAHLWAN ESTATE 90 FEET RAOD SAKINAKA MUMBAI 400072
+                    Gala No 50 Pahalwan compund Nehal estate, near Masjid Darul Huda, Saki Naka, Mumbai, Maharashtra 400072
                   </p>
                 </div>
               </div>
@@ -66,13 +62,7 @@ export default function ContactSection() {
               </a>
             </div>
 
-            <div className={styles.tipBox}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5 text-amber-700 shrink-0 mt-0.5"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              <p className={styles.tipText}>
-                <strong>Pro Tip:</strong> Send photos of your scrap on WhatsApp for a quick price estimate.
-              </p>
-            </div>
-            
+
           </div>
 
           <div className={styles.mapPane}>

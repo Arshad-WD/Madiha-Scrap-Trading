@@ -8,17 +8,19 @@
   @apply max-w-7xl mx-auto px-6 md:px-10;
 }
 
-.header {
-  @apply text-center mb-16;
+.sectionTitle {
+  @apply text-center pb-10;
 }
 
-.title {
-  @apply text-4xl md:text-5xl font-bold uppercase mb-4 text-gray-900;
+.sectionTitle h2 {
+  @apply text-3xl sm:text-4xl font-extrabold uppercase tracking-wide mb-3;
+  background-image: linear-gradient(to right, #854399, #323c96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Raleway", sans-serif;
 }
 
-.subtitle {
-  @apply text-gray-600 max-w-2xl mx-auto text-lg;
-}
 
 .card {
   @apply grid lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden;
@@ -41,7 +43,9 @@
 }
 
 .iconWrapper {
-  @apply w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-700 shrink-0;
+  @apply w-10 h-10 rounded-full flex items-center justify-center shrink-0;
+  background-color: rgba(133, 67, 153, 0.1);
+  color: #854399;
 }
 
 .itemLabel {
@@ -57,23 +61,38 @@
 }
 
 .buttonRow {
-  @apply flex flex-col sm:flex-row gap-4 w-full;
+  @apply flex flex-col sm:flex-row gap-4 w-full mt-2;
 }
 
 .callButton {
-  @apply flex-1 w-full bg-amber-600 text-white flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-amber-700 transition-colors shadow text-center whitespace-nowrap;
+  @apply flex-1 w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-lg font-bold text-white transition-all duration-300 shadow-md text-center whitespace-nowrap;
+  background-color: #f1a40a;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.callButton:hover {
+  background-color: #d88f00;
+  box-shadow: 0 6px 20px rgba(241, 164, 10, 0.4);
+  transform: translateY(-2px);
 }
 
 .whatsappButton {
-  @apply flex-1 w-full border-2 border-green-500 text-green-600 flex items-center justify-center gap-2 py-3.5 px-4 rounded-lg font-bold hover:bg-green-50 transition-colors text-center whitespace-nowrap;
+  @apply flex-1 w-full border-2 flex items-center justify-center gap-2 py-3.5 px-6 rounded-lg font-bold transition-all duration-300 text-center whitespace-nowrap;
+  border-color: #854399;
+  color: #854399;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.tipBox {
-  @apply mt-8 bg-amber-50 p-4 rounded-lg flex items-start gap-3 border border-amber-100;
-}
-
-.tipText {
-  @apply text-sm text-amber-900;
+.whatsappButton:hover {
+  background-image: linear-gradient(to right, #854399, #323c96);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 20px rgba(133, 67, 153, 0.3);
+  transform: translateY(-2px);
 }
 
 .mapPane {

@@ -38,7 +38,7 @@ export default function JsonLd() {
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Gala No. 50, Nehal Compound, Pahelwan Estate, Near Masjid Darul Huda, 90 Feet Road",
+          "streetAddress": "Gala No 50 Pahalwan compund Nehal estate, near Masjid Darul Huda",
           "addressLocality": "Saki Naka, Mumbai",
           "addressRegion": "Maharashtra",
           "postalCode": "400072",

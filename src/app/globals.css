@@ -104,3 +104,116 @@
 .animate-pulse-ring {
   animation: pulseRing 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
 }
+
+/* Meher Petrochem Exact Design System Tokens */
+.gradient-header-bg {
+  background-image: linear-gradient(to right, #854399, #323c96);
+}
+
+.gradient-overlay-bg {
+  background-image: linear-gradient(to right, rgba(135, 65, 150, 0.85), rgba(50, 60, 150, 0.85));
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, rgba(135, 65, 150, 1), rgba(50, 60, 150, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gold {
+  background-color: #f1a40a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #d88f00;
+}
+
+.btn-gold-pill {
+  background-color: #f6b024;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-gold-pill:hover {
+  background-color: #f1a40a;
+  box-shadow: 0 6px 20px rgba(246, 176, 36, 0.4);
+}
+
+.btn-gold-outline {
+  border: 2px solid #f6b024;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-gold-outline:hover {
+  background-color: #f6b024;
+  color: #ffffff;
+}
+
+/* Meher Petrochem Exact Keyframe Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes logoRotation {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.animate-fadeInUp-delay-1 {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.35s both;
+}
+
+.animate-fadeInUp-delay-2 {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+
+.animate-logoRotation {
+  animation: logoRotation 4s infinite linear;
+}
+
+/* Meher Petrochem Dotted Section Background */
+.dotted-section-bg {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(133, 67, 153, 0.15) 1.5px, transparent 1.5px), radial-gradient(rgba(50, 60, 150, 0.12) 1.5px, #ffffff 1.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+

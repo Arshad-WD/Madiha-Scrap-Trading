@@ -1,85 +1,181 @@
 @reference "../../app/globals.css";
 
 .header {
-  @apply fixed top-0 w-full z-50 transition-all duration-300 border-b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 78px;
+  background-image: linear-gradient(to right, #854399, #323c96);
+  transition: all 0.5s;
+  z-index: 997;
+  display: flex;
+  align-items: center;
 }
 
-.scrolled {
-  @apply bg-white/90 backdrop-blur-md shadow-sm py-3 border-border-custom;
+.headerScrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.notScrolled {
-  @apply bg-white py-5 border-transparent;
-}
-
-.container {
-  @apply max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between;
+@keyframes naturalLogoSpin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .logo {
-  @apply flex items-center gap-2.5;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  perspective: 1000px;
 }
 
-.logoBox {
-  @apply relative flex items-center justify-center w-11 h-11 bg-gray-900 rounded-xl overflow-hidden shrink-0 shadow-md border-b-2 border-amber-500 transition-all group-hover:shadow-amber-500/20 group-hover:-translate-y-0.5;
+.logoImg {
+  animation: naturalLogoSpin 8s infinite ease-in-out;
+  animation-delay: 1.5s;
 }
 
-.logoText {
-  @apply font-bold text-xl text-gray-900 tracking-tight uppercase;
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
-.logoSubText {
-  @apply text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mt-1;
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
-.nav {
-  @apply hidden md:flex items-center gap-8;
-}
-
-.navLinkButton {
-  @apply flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] text-text-secondary;
+.navbar li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 24px;
 }
 
 .navLink {
-  @apply text-sm font-semibold uppercase tracking-wider transition-colors hover:text-[#d97706] py-4 text-text-secondary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff !important;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Raleway", sans-serif;
 }
 
-.dropdownContainer {
-  @apply absolute top-full left-0 w-64 bg-white/95 backdrop-blur-md shadow-xl border border-gray-100 rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-3 group-hover:translate-y-0;
+.navLink::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f6b024;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.dropdownLink {
-  @apply block px-5 py-3 text-sm font-semibold uppercase tracking-wider text-gray-700 hover:bg-amber-50 hover:text-amber-700 hover:pl-6 transition-all duration-300;
+.navLink:hover::before {
+  visibility: visible;
+  width: 100%;
 }
 
-.ctaButton {
-  @apply flex items-center gap-2 px-6 py-2.5 text-sm font-bold uppercase tracking-wider transition-transform hover:scale-105 shadow-md rounded-md bg-accent text-black;
+.downloadBtn {
+  display: inline-block;
+  padding: 7px 18px !important;
+  background: #f1a40a;
+  color: #ffffff !important;
+  border-radius: 4px;
+  margin-left: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  font-family: "Raleway", sans-serif;
 }
 
-.mobileToggle {
-  @apply md:hidden p-2 text-text-primary;
+.downloadBtn:hover {
+  background: #d88f00;
 }
 
-.mobileMenu {
-  @apply absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 py-4 px-6 flex flex-col gap-4 md:hidden;
+.mobileNavToggle {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 0;
 }
 
-.mobileMenuLink {
-  @apply text-base font-bold uppercase tracking-wider py-3 border-b border-gray-100 text-gray-900;
+@media (max-width: 991px) {
+  .mobileNavToggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
 }
 
-.mobileDropdownTitle {
-  @apply text-base font-bold uppercase tracking-wider text-gray-900 mb-2;
+.mobileNavOverlay {
+  position: fixed;
+  overflow: hidden;
+  top: 78px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(135, 65, 150, 0.95),
+    rgba(50, 60, 150, 0.95)
+  );
+  transition: 0.3s;
+  z-index: 999;
+  padding: 20px;
 }
 
-.mobileDropdownList {
-  @apply flex flex-col pl-4 border-l-2 border-amber-500 ml-1;
+.mobileNavOverlay ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
-.mobileDropdownLink {
-  @apply text-sm font-bold uppercase tracking-wider py-2.5 text-gray-500 hover:text-amber-700;
+.mobileNavLink {
+  font-size: 16px;
+  font-weight: 700;
+  color: #854399 !important;
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
 }
 
-.mobileCta {
-  @apply mt-4 flex items-center justify-center gap-2 px-6 py-3 text-sm font-bold uppercase tracking-wider rounded-md bg-accent text-black;
+.mobileDownloadBtn {
+  display: block;
+  padding: 12px 20px;
+  background: #f1a40a;
+  color: #ffffff !important;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

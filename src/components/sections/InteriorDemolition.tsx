@@ -55,24 +55,12 @@ export default function InteriorDemolition() {
       
       <div className={styles.container}>
         
-        <div className={styles.header}>
-          <div>
-            <div className={styles.headerBadge}>
-              <span className={styles.badgeLine} />
-              <span className={styles.badgeText}>Expert Clearance</span>
-            </div>
-            <h2 className={styles.title}>
-              Interior <span className="text-amber-500 font-black">Demolition</span>
-            </h2>
-            <p className={styles.desc}>
-              {"We don't just buy scrap. Our specialized teams execute clean, noise-controlled, and systematic interior dismantling for commercial spaces."}
-            </p>
-          </div>
-          
-          <a href="#contact" className={`group ${styles.bookLink}`}>
-            Book Demolition 
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-          </a>
+        {/* Section Title */}
+        <div className={styles.sectionTitle}>
+          <h2>Interior Demolition</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm mt-2">
+            Clean, noise-controlled, and systematic interior dismantling for corporate offices, retail shops, and warehouses across Mumbai.
+          </p>
         </div>
 
         {/* Expandable Accordion Gallery */}

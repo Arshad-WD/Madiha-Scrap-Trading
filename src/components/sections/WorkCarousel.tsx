@@ -44,26 +44,11 @@ export default function WorkCarousel() {
       <div className={styles.container}>
 
         {/* Header */}
-        <div className={styles.header}>
-          <div>
-            <div className={styles.headerBadge}>
-              <span className={styles.badgeLine} />
-              <span className={styles.badgeText}>Our Work</span>
-            </div>
-            <h2 className={styles.title}>
-              Recent <span className="text-amber-500">Clearances</span>
-            </h2>
-            <p className={styles.desc}>A snapshot of our latest large-scale scrap pickups across Mumbai.</p>
-          </div>
-          <div className={styles.controls}>
-            <span className={styles.counter}>{activeIndex + 1} / {workItems.length}</span>
-            <button aria-label="Previous Slide" onClick={prevSlide} className={styles.prevButton}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-            </button>
-            <button aria-label="Next Slide" onClick={nextSlide} className={styles.nextButton}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </button>
-          </div>
+        <div className={styles.sectionTitle}>
+          <h2>Gallery &amp; Recent Work</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm mt-2">
+            A portfolio snapshot of our high-volume scrap clearance and factory decommissioning projects across Mumbai.
+          </p>
         </div>
 
         {/* Main Content Grid */}

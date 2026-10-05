@@ -10,15 +10,6 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "#about" },
   { name: "Our Services", href: "#services" },
-  { name: "Materials", href: "#materials" },
-  { 
-    name: "Gallery & Demolition", 
-    href: "#", 
-    dropdown: [
-      { name: "Interior Demolition", href: "#interior" },
-      { name: "Recent Clearances", href: "#work" }
-    ]
-  },
   { name: "Contact Us", href: "#contact" },
 ];
 
@@ -34,79 +25,46 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header
-      className={`${styles.header} ${
-        isScrolled ? styles.scrolled : styles.notScrolled
-      }`}
-    >
-      <div className={styles.container}>
+    <header id="header" className={`${styles.header} ${isScrolled ? styles.headerScrolled : ''}`}>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full flex items-center justify-between h-full">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 py-1">
+        <Link href="/" className={styles.logo}>
           <Image
-            src="/images/logo.jpeg"
+            src="/images/logo.png"
             alt="Madiha Scrap Trading"
-            width={240}
-            height={70}
+            width={260}
+            height={75}
             priority
-            className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-sm"
+            className={`h-14 sm:h-16 w-auto object-contain py-1 ${styles.logoImg}`}
           />
         </Link>
 
-
-
         {/* Desktop Nav */}
-        <nav className={styles.nav}>
-          {navLinks.map((link) => (
-            link.dropdown ? (
-              <div key={link.name} className="relative group py-4">
-                <button className={styles.navLinkButton}>
+        <nav className={styles.navbar}>
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link href={link.href} className={styles.navLink}>
                   {link.name}
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <div className={styles.dropdownContainer}>
-                  {link.dropdown.map((dropItem) => (
-                    <Link
-                      key={dropItem.name}
-                      href={dropItem.href}
-                      className={styles.dropdownLink}
-                    >
-                      {dropItem.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={styles.navLink}
-              >
-                {link.name}
-              </Link>
-            )
-          ))}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a href="tel:+918291312506" className={styles.downloadBtn}>
+                GET PRICE QUOTE
+              </a>
+            </li>
+          </ul>
         </nav>
-
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <a href="tel:+918291312506" className={styles.ctaButton}>
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            Call Now
-          </a>
-        </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className={styles.mobileToggle}
+          className={styles.mobileNavToggle}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -118,40 +76,25 @@ export default function Navbar() {
 
       {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className={styles.mobileMenu}>
-          {navLinks.map((link) => (
-            link.dropdown ? (
-              <div key={link.name} className="flex flex-col pt-2 pb-1 border-b border-gray-100">
-                <span className={styles.mobileDropdownTitle}>
+        <div className={styles.mobileNavOverlay}>
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  className={styles.mobileNavLink}
+                  onClick={() => setIsOpen(false)}
+                >
                   {link.name}
-                </span>
-                <div className={styles.mobileDropdownList}>
-                  {link.dropdown.map((dropItem) => (
-                    <Link
-                      key={dropItem.name}
-                      href={dropItem.href}
-                      className={styles.mobileDropdownLink}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {dropItem.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={styles.mobileMenuLink}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            )
-          ))}
-          <a href="tel:+918291312506" className={styles.mobileCta}>
-            Call Now
-          </a>
+                </Link>
+              </li>
+            ))}
+            <li className="pt-3">
+              <a href="tel:+918291312506" className={styles.mobileDownloadBtn}>
+                GET PRICE QUOTE: +91 82913 12506
+              </a>
+            </li>
+          </ul>
         </div>
       )}
     </header>

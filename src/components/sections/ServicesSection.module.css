@@ -1,53 +1,54 @@
 @reference "../../app/globals.css";
 
-.section {
-  @apply py-24 bg-gray-50;
+.servicesSection {
+  @apply py-20 relative overflow-hidden bg-white;
+}
+
+.servicesSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/images/about-bg.png") center center no-repeat;
+  background-size: contain;
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .container {
-  @apply max-w-7xl mx-auto px-6 md:px-10;
+  @apply max-w-7xl mx-auto px-6 md:px-10 relative z-10;
 }
 
-.header {
-  @apply mb-12;
+.sectionTitle {
+  @apply text-center pb-12;
 }
 
-.headerBadge {
-  @apply flex items-center gap-3 mb-4;
+.sectionTitle h2 {
+  @apply text-3xl sm:text-4xl font-extrabold uppercase tracking-wide mb-3;
+  background-image: linear-gradient(to right, #854399, #323c96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Raleway", sans-serif;
 }
 
-.badgeLine {
-  @apply inline-block h-1 w-10 bg-accent;
-}
-
-.badgeText {
-  @apply text-sm font-bold uppercase tracking-widest text-gray-600;
-}
-
-.title {
-  @apply text-4xl md:text-5xl font-bold uppercase text-text-primary;
-}
-
-.grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
-}
-
-.card {
-  @apply bg-white p-8 rounded-xl shadow-sm border border-gray-100 transition-all hover:shadow-lg hover:-translate-y-1 relative overflow-hidden;
-}
-
-.bgNumber {
-  @apply absolute -top-4 -right-4 text-8xl font-black text-gray-50 group-hover:text-amber-50 transition-colors pointer-events-none;
-}
-
-.iconBox {
-  @apply w-14 h-14 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors relative z-10;
+.serviceCard {
+  @apply bg-white p-8 rounded-lg flex items-start gap-6 border border-gray-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .cardTitle {
-  @apply text-xl font-bold uppercase mb-3 relative z-10 text-gray-900 group-hover:text-amber-700 transition-colors;
+  @apply text-lg font-bold mb-3 tracking-tight;
+  background-image: linear-gradient(to right, #854399, #323c96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Raleway", sans-serif;
 }
 
 .cardDesc {
-  @apply text-gray-600 leading-relaxed relative z-10;
+  @apply text-sm text-gray-600 leading-relaxed font-normal;
 }

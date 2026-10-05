@@ -1,76 +1,121 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
+  const [cardsVisible, setCardsVisible] = useState(false);
+  const iconBoxesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setCardsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.15 }
+    );
+
+    if (iconBoxesRef.current) {
+      observer.observe(iconBoxesRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="home" className={styles.section}>
-      
-      {/* Light Grid Background */}
-      <div className={`hero-grid ${styles.bgGrid}`} />
+    <>
+      {/* ======= Hero Section ======= */}
+      <section id="hero" className={styles.hero}>
+        <div className={styles.heroOverlay} />
 
-      {/* Hero Content Container */}
-      <div className={styles.contentContainer}>
-        <div className="max-w-3xl">
-          
-          <div className={styles.badgeWrapper}>
-            <span className={styles.badgeLine} />
-            <h2 className={styles.badgeText}>{"Mumbai's Trusted Scrap Dealer & Trader"}</h2>
-          </div>
-          
-          <h1 className={styles.heading}>
-            Scrap Dealer <br />
-            <span className="text-amber-600">&amp; Trader</span> <br />
-            in Mumbai
-          </h1>
-          
-          <p className={styles.description}>
-            Madiha Scrap Trading provides top market rates, transparent on-site digital scale weighing, and instant payment for commercial scrap, factory dismantling, e-waste, and interior demolition across Mumbai.
-          </p>
-
-          <div className={styles.featureGrid}>
-            <div className={styles.featureItem}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>10+ Years Industry Experience</span>
-            </div>
-            <div className={styles.featureItem}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-600 shrink-0" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>Official GST Tax Invoicing</span>
+        <div className={styles.heroContent}>
+          <div className="flex flex-col items-center w-full">
+            <h2 className="animate-fadeInDown">
+              Welcome to <span>Madiha Scrap Trading</span>
+            </h2>
+            <p className="animate-fadeInUp-delay-1">
+              Mumbai's premier licensed scrap dealer, scrap trader, and commercial clearance contractor. Authorized for high-tonnage industrial scrap collection, on-site digital scale weighing, and instant cash/bank payment.
+            </p>
+            <div className="animate-fadeInUp-delay-2">
+              <a href="#contact" className={styles.btnGetStarted}>
+                Get Price Quote
+              </a>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* ======= Icon Boxes Section ======= */}
+      <section id="icon-boxes" className={styles.iconBoxes} ref={iconBoxesRef}>
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* Box 1 */}
+            <div
+              className={`${styles.iconBox} ${
+                cardsVisible ? "animate-fadeInUp" : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className={styles.icon}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#f6b024] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <h4 className={styles.title}>
+                <a href="#services">Commercial Scrap Buying</a>
+              </h4>
+              <p className={styles.description}>
+                Bulk purchasing of Iron (HMS 1 &amp; 2), Copper wire, Aluminium extrusions, Brass, and Stainless Steel scrap at highest daily market rates.
+              </p>
+            </div>
 
-          <div className={styles.buttonGroup}>
-            <a href="tel:+918291312506" className={styles.primaryButton}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call for Best Price
-            </a>
-            <a href="https://wa.me/918291312506?text=Hello%21%20I%20want%20to%20inquire%20about%20scrap%20rates." target="_blank" rel="nofollow noopener noreferrer" className={styles.secondaryButton}>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-              WhatsApp Us
-            </a>
+            {/* Box 2 */}
+            <div
+              className={`${styles.iconBox} ${
+                cardsVisible ? "animate-fadeInUp" : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className={styles.icon}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#f6b024] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0v-4m0 4h4m-4-4l-4 4m4-4l4 4" />
+                </svg>
+              </div>
+              <h4 className={styles.title}>
+                <a href="#services">Turnkey Office &amp; Scrap Clearance</a>
+              </h4>
+              <p className={styles.description}>
+                Systematic office, retail shop, bank, and warehouse racking dismantling with full site clearance and scrap value offset.
+              </p>
+            </div>
+
+            {/* Box 3 */}
+            <div
+              className={`${styles.iconBox} ${
+                cardsVisible ? "animate-fadeInUp" : "opacity-0"
+              }`}
+              style={{ animationDelay: "0.5s" }}
+            >
+              <div className={styles.icon}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-9 text-[#f6b024] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
+              <h4 className={styles.title}>
+                <a href="#services">Waste Oil &amp; E-Waste Disposal</a>
+              </h4>
+              <p className={styles.description}>
+                Certified disposal of server racks, motherboards, electric motors, generators, boilers, and heavy plant machinery decommissioning.
+              </p>
+            </div>
+
           </div>
-
         </div>
-      </div>
-      
-      {/* Bottom Ticker */}
-      <div className={styles.tickerWrapper}>
-        <div className={`ticker ${styles.tickerContent}`}>
-          <span className="mr-8">IRON SCRAP ◆ COPPER SCRAP ◆ ALUMINIUM SCRAP ◆ BRASS SCRAP ◆ E-WASTE ◆ MACHINERY SCRAP ◆ BATTERY SCRAP ◆ STEEL SCRAP ◆ PLASTIC SCRAP ◆ PAPER SCRAP ◆</span>
-          <span>IRON SCRAP ◆ COPPER SCRAP ◆ ALUMINIUM SCRAP ◆ BRASS SCRAP ◆ E-WASTE ◆ MACHINERY SCRAP ◆ BATTERY SCRAP ◆ STEEL SCRAP ◆ PLASTIC SCRAP ◆ PAPER SCRAP ◆</span>
-        </div>
-      </div>
-
-    </section>
+      </section>
+    </>
   );
 }
-
-
