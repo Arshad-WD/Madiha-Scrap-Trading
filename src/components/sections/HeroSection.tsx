@@ -3,9 +3,63 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./HeroSection.module.css";
 
+interface Slide {
+  id: number;
+  title: React.ReactNode;
+  description: string;
+  btnText: string;
+  btnLink: string;
+  bgImage: string;
+}
+
+const slides: Slide[] = [
+  {
+    id: 1,
+    title: (
+      <>
+        Welcome to <span>Madiha Scrap Trading</span>
+      </>
+    ),
+    description:
+      "Mumbai's premier licensed scrap dealer, scrap trader, and commercial clearance contractor. Authorized for high-tonnage industrial scrap collection, on-site digital scale weighing, and instant cash/bank payment.",
+    btnText: "Get Price Quote",
+    btnLink: "#contact",
+    bgImage: "/images/hero-bg.jpg",
+  },
+  {
+    id: 2,
+    title: "Be Part of the Solution, Not Pollution",
+    description:
+      "Benchmarked practices for eco-friendly metal recycling, corporate interior dismantling, and certified heavy scrap disposal tailored across Mumbai and Maharashtra.",
+    btnText: "Our Scrap Services",
+    btnLink: "#services",
+    bgImage: "/images/hero-2.png",
+  },
+  {
+    id: 3,
+    title: "Trusted by Leading Commercial & Industrial Entities",
+    description:
+      "Over 10 years of trusted scrap purchasing and clearance services for factories, corporate offices, construction yards, and commercial businesses with 100% digital scale accuracy and immediate payment.",
+    btnText: "Contact Us Today",
+    btnLink: "#contact",
+    bgImage: "/images/hero-3.png",
+  },
+];
+
 export default function HeroSection() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const [cardsVisible, setCardsVisible] = useState(false);
   const iconBoxesRef = useRef<HTMLDivElement>(null);
+
+  // Auto slide interval
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [isPaused]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,26 +79,110 @@ export default function HeroSection() {
     return () => observer.disconnect();
   }, []);
 
+  const handlePrev = () => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
   return (
     <>
-      {/* ======= Hero Section ======= */}
-      <section id="hero" className={styles.hero}>
+      {/* ======= Hero Section Carousel ======= */}
+      <section
+        id="hero"
+        className={styles.hero}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        {/* Background Slides */}
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`${styles.slideBg} ${
+              index === currentSlide ? styles.slideBgActive : ""
+            }`}
+            style={{ backgroundImage: `url('${slide.bgImage}')` }}
+          />
+        ))}
+
         <div className={styles.heroOverlay} />
 
         <div className={styles.heroContent}>
-          <div className="flex flex-col items-center w-full">
-            <h2 className="animate-fadeInDown">
-              Welcome to <span>Madiha Scrap Trading</span>
-            </h2>
-            <p className="animate-fadeInUp-delay-1">
-              Mumbai's premier licensed scrap dealer, scrap trader, and commercial clearance contractor. Authorized for high-tonnage industrial scrap collection, on-site digital scale weighing, and instant cash/bank payment.
-            </p>
-            <div className="animate-fadeInUp-delay-2">
-              <a href="#contact" className={styles.btnGetStarted}>
-                Get Price Quote
-              </a>
-            </div>
-          </div>
+          {slides.map((slide, index) => {
+            const isActive = index === currentSlide;
+            if (!isActive) return null;
+            return (
+              <div
+                key={slide.id}
+                className="flex flex-col items-center w-full transition-opacity duration-700 ease-in-out"
+              >
+                <h2 className="animate-fadeInDown">{slide.title}</h2>
+                <p className="animate-fadeInUp-delay-1">{slide.description}</p>
+                <div className="animate-fadeInUp-delay-2">
+                  <a href={slide.btnLink} className={styles.btnGetStarted}>
+                    {slide.btnText}
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Carousel Prev/Next Navigation Controls */}
+        <button
+          onClick={handlePrev}
+          className={styles.carouselControlPrev}
+          aria-label="Previous Slide"
+        >
+          <svg
+            className="w-7 h-7 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <button
+          onClick={handleNext}
+          className={styles.carouselControlNext}
+          aria-label="Next Slide"
+        >
+          <svg
+            className="w-7 h-7 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+
+        {/* Slide Indicators / Dots */}
+        <div className={styles.carouselIndicators}>
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`${styles.dot} ${
+                index === currentSlide ? styles.dotActive : ""
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </section>
 
